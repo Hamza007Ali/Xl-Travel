@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo2.png" />
+    <!-- Style sheets link-->
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/helpCenter.css" />
+    <link rel="stylesheet" href="./assets/style/extra-category.css" />
+    <link rel="stylesheet" href="./assets/style/public-review.css" />
+    <link rel="stylesheet" href="./assets/style/rating.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesom -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <!-- AOS Aniamtion -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Isotope FIlters -->
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <title>Help Center</title>
+</head>
+
+<body class="">
+    <!-- Header -->
+    <header>
+        <div
+            class="header-index header-wrapper d-flex justify-content-between align-items-center container-main py-3 px-3 px-xl-0">
+            <div class="header-logo">
+                <a href="/">
+                    <img loading="lazy" style="height: 86px" class="cursor-pointer" src="assets/images/logo.png"
+                        alt="xlTravel-Logo" />
+                </a>
+            </div>
+            <div class="d-block d-lg-none w-70 mx-auto">
+                <div id="header-search-mobile" class="header-search-mobile hide" onclick="displayBlock(`search-index`)">
+                    <div class="d-flex justify-content-center position-relative align-items-center">
+                        <input class="w-100 mobile-search-input-header mx-auto pl-4 py-1 box-shadow" disabled
+                            placeholder="Hey! Where do you want to go?" />
+                        <svg style="left: 10%; top: 30%" class="svg-icon position-absolute" fill="#00b2d3"
+                            aria-labelledby="title desc" height="15" width="15" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7">
+                            <title id="title">Search Icon</title>
+                            <desc id="desc"></desc>
+                            <g class="search-path" fill="none" stroke="#00b2d3">
+                                <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+                                <circle cx="8" cy="8" r="7" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <nav class="nav-bar d-none d-lg-block">
+                    <ul class="d-flex align-items-center list-unstyled">
+                        <li><a href="/home.html">Home</a></li>
+                        <li>
+                            <a
+                                class="hot-deail-text position-relative d-flex align-items-center justify-content-center"><img
+                                    class="position-absolute" style="height: 24px; top: -21px"
+                                    src="./assets/images/icons/hot-deal.gif" alt="hot-deatil" />Hot Deals</a>
+                        </li>
+                        <li><a>Xl Travel Zone</a></li>
+                        <li><a href="./about-us.html">About Us</a></li>
+                        <li>
+                            <a href="./help-center.html" class="index-active">Help Center</a>
+                        </li>
+                        <li><a>Host Zone</a></li>
+                        <li>
+                            <a href="./list-your-property.html"><button class="teaslih-text-button cursor-pointer">
+                                    List Your Property
+                                </button></a>
+                        </li>
+                        <li class="mr-0">
+                            <a>
+                                <button
+                                    class="login-signup_btn tealish-gradient-button d-flex justify-content-center align-items-center cursor-pointer">
+                                    <img class="mr-2" height="13px" src="./assets/images/icons/lock.png" alt="lock" />
+                                    LOGIN / SIGN UP
+                                </button></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="d-block d-lg-none">
+                    <input type="checkbox" id="openSideMenu" class="openSideMenu" />
+                    <label for="openSideMenu" class="menuIconToggle">
+                        <div class="hamb-line dia part-1"></div>
+                        <div class="hamb-line hor"></div>
+                        <div class="hamb-line dia part-2"></div>
+                    </label>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li><a href="/home.html">Home</a></li>
+                            <li>
+                                <a href="#" class="hot-deail-text d-flex align-items-center">Hot Deals
+                                    <img style="
+                        height: 27px;
+                        margin-left: 12px;
+                        margin-bottom: 8px;
+                      " src="./assets/images/icons/hot-deal.gif" alt="hot-deatil" /></a>
+                            </li>
+                            <li><a href="#">Xl Travel Zone</a></li>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="./help-center.html">Help Center</a></li>
+                            <li><a href="#">Host Zone</a></li>
+                            <div class="d-flex flex-column align-items-center pt-2 px-2">
+                                <a href="./list-your-property.html">
+                                    <button class="teaslih-text-button cursor-pointer">
+                                        List Your Property
+                                    </button>
+                                </a>
+                                <button
+                                    class="login-signup_btn tealish-gradient-button mt-4 d-flex justify-content-center align-items-center cursor-pointer">
+                                    <img class="mr-2" height="13px" src="./assets/images/icons/lock.png" alt="lock" />
+                                    LOGIN / SIGN UP
+                                </button>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- hero section-->
+
+    <div
+        class="w-45 review-padding rounded bg-white my-5  d-flex flex-column mx-auto justify-content-center align-items-center ">
+        <div class="pb-3">
+            <img loading="lazy" style="height: 65px" class="cursor-pointer logo-margin pb-2"
+                src="assets/images/xl-s-logo.png" alt="xlTravel-Logo" />
+        </div>
+        <h6 class="font-fam fst-italic fw-bold text-center">Write A Public Review</h6>
+        <p class="font-fam fst-italic font-sm text-center w-100 pb-4">Tell the next guests what you loved and anything
+            else they should know about <span class="fw-bold"> Anna’s place</span></p>
+        <form class="w-100">
+            <textarea name="comment" form="usrform" placeholder="Write a public review"
+                class="font-size-10 font-fam textarea-bg w-100 py-3 px-3 fst-italic"
+                style="min-height:190px; color: #808080;"></textarea>
+            <div class="d-flex justify-content-center mt-4">
+                <img loading="lazy" style="height: 25px" class="cursor-pointer logo-margin pb-2"
+                    src="assets/images/icons/exclam.png" alt="xlTravel-exclam" />
+                <h6 class="ml-2 font-small font-fam fst-italic fw-bold">Check Out Review Tips</h6>
+            </div>
+            <div>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="services-rate.html">
+                    <button type="button" value="submit" class="email-btn-bg   text-white px-5 mr-3 "
+                        style="background-color: #808080;">
+                        BACK
+                    </button>
+                </a>
+                    <button type="button" value="submit" class="email-btn-bg  text-white px-5" role="button"
+                        data-bs-toggle="modal" onclick="showModal()">
+                        Publish Review
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="review-popup d-none hidden" id="popup">
+            <div class=" w-29 mx-auto popup-animate ">
+                <div class="background-color-tealish p-4" style="border-radius: 10px;">
+                    <h6 class="font-fam fst-italic fw-bold font-size-14 m-0 text-white">Thanks For Your Review</h6>
+                    <p class="font-fam fst-italic font-size-11 py-3 text-white">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua</p>
+                    <p class="font-fam fst-italic text-right font-size-12 text-white cursor-pointer" id="btn-done"
+                        onclick="hideModal()">Done></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <footer class="footer background-color-gray-three mt-5 overflow-hidden">
+        <div data-aos="flip-up" data-aos-easing="linear" data-aos-duration="400"
+            class="footer-inner container-main mx-auto d-flex flex-column flex-lg-row">
+            <div class="footer-single logo-side w-26">
+                <div class="cursor-pointer">
+                    <img loading="lazy" style="height: 122px" src="./assets/images/logo.png" alt="logo" />
+                </div>
+                <div class="ml-1">
+                    <p class="text-white font-size-12 pt-4 font-weight-200">
+                        XL Travel OU
+                    </p>
+                    <p class="text-white font-size-12 pt-2 font-weight-200">
+                        Address: Sepapaja 6, Tallinn 1551, Estonia
+                    </p>
+                    <p class="text-white font-size-12 pt-2 font-weight-200">
+                        Registry code: 16346723
+                    </p>
+                </div>
+                <div class="pt-4">
+                    <img loading="lazy" style="height: 36px; margin-right: 10px" class="social-media-icon"
+                        src="./assets/images/icons/facebook.png" alt="facebook" />
+                    <img loading="lazy" style="height: 36px; margin-right: 10px" class="social-media-icon"
+                        src="./assets/images/icons/twitter.png" alt="facebook" />
+                    <img loading="lazy" style="height: 36px; margin-right: 10px" class="social-media-icon"
+                        src="./assets/images/icons/google-blue.png" alt="facebook" />
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                        src="./assets/images/icons/instagram.png" alt="facebook" />
+                </div>
+            </div>
+            <div class="list-inner w-42 d-flex flex-column flex-lg-row justify-content-between">
+                <div class="footer-single footer-links w-31 pt-5">
+                    <ul class="text-white" style="list-style-type: '-'">
+                        <p class="footer-link-headings font-weight-normal font-size-13">
+                            About Us
+                        </p>
+                        <div class="footer-border-line"></div>
+                        <li><a>What Is Xl Travel</a></li>
+                        <li><a>Careers</a></li>
+                        <li><a>Press</a></li>
+                        <li><a>Travel Zone</a></li>
+                    </ul>
+                </div>
+                <div style="border-bottom: 1.5px solid #1a8f91" class="d-block d-lg-none"></div>
+                <div class="footer-single footer-links w-31 pt-5">
+                    <ul class="text-white" style="list-style-type: '-'">
+                        <p class="footer-link-headings font-weight-normal font-size-13">
+                            Help
+                        </p>
+                        <div class="footer-border-line"></div>
+                        <li><a>Help Center</a></li>
+                        <li><a>FAQs</a></li>
+                        <li><a>Privacy Policy</a></li>
+                        <li><a>Cookie Policy</a></li>
+                        <li><a>Terms Of Use</a></li>
+                    </ul>
+                </div>
+                <div style="border-bottom: 1.5px solid #1a8f91" class="d-block d-lg-none"></div>
+                <div class="footer-single footer-links w-31 pt-5">
+                    <ul class="text-white" style="list-style-type: '-'">
+                        <p class="footer-link-headings font-weight-normal font-size-13">
+                            Partner with us
+                        </p>
+                        <div class="footer-border-line"></div>
+                        <li><a>Partner Hub</a></li>
+                        <li><a>Advertise On XL Travel</a></li>
+                        <li><a>Affiliate</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-single footer-links pt-5">
+                <div class="d-flex justify-content-center">
+                    <div class="position-relative mr-4">
+                        <img loading="lazy" style="height: 119px" src="./assets/images/icons/google-rating-badge.png"
+                            alt="google-badge" />
+                        <div style="top: 59px; left: 0; right: 0"
+                            class="d-flex flex-column align-items-center position-absolute">
+                            <p style="color: #ee453e; line-height: 10px" class="font-size-18 font-weight-500">
+                                4.7
+                            </p>
+                            <div>
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative mr-4">
+                        <img loading="lazy" style="height: 119px" src="./assets/images/icons/facebook-rating-badge.png"
+                            alt="facebook-badge" />
+                        <div style="top: 59px; left: 0; right: 0"
+                            class="d-flex flex-column align-items-center position-absolute">
+                            <p style="color: #3b559f; line-height: 10px" class="font-size-18 font-weight-500">
+                                4.7
+                            </p>
+                            <div>
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png"
+                                    alt="star" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img loading="lazy" style="height: 119px" src="./assets/images/icons/award-badge.png"
+                            alt="award-badge" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-main mx-auto">
+            <p class="text-center text-white font-weight-400 py-4 py-lg-5 font-size-14">
+                Copyright © 2022 Xl Travel. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- SIGNUP/LOGIN FORM -->
+    <section class="login_signup" id="login_signup-form">
+        <div class="login-signup_container">
+            <div class="form_container">
+                <div class="form_text d-none d-sm-block">
+                    <p>
+                        “ What is there more kindly the feelings between host & guest ?
+                    </p>
+                    <div class="form_date">
+                        <p id="form_date">23/4/2022</p>
+                        <p id="form_day">Friday</p>
+                    </div>
+                </div>
+
+                <form class="login-signup_form">
+                    <img src="./assets/images/logo.png" alt="logo" loading="lazy" />
+                    <h5 id="login-signup_form-heading">Sign In</h5>
+
+                    <div class="form_input-group d-none" id="first_name">
+                        <label>First Name</label>
+                        <input type="text" placeholder="John" required />
+                    </div>
+
+                    <div class="form_input-group d-none" id="last_name">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Doe" required />
+                    </div>
+
+                    <div class="form_input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Mymail@gmail.com" required />
+                    </div>
+
+                    <div class="form_input-group" id="login_password">
+                        <label>Password</label>
+                        <input type="password" placeholder="*********" required />
+                    </div>
+
+                    <a href="./become-host.html" class="w-100">
+                        <button class="form_btn" type="button" id="form_btn">
+                            Sign In
+                        </button>
+                    </a>
+
+                    <div class="form_links" id="form_links">
+                        <span class="form_link-one" id="create-account_link">Create Account</span>
+                        <span class="form_link-two" id="forget-password_link">Forget Password?</span>
+                    </div>
+
+                    <div class="social-login_links" id="social-login_links">
+                        <p id="social-login_title">Or Sign in With</p>
+                        <div class="social_login-btns">
+                            <button type="button">
+                                <img src="./assets/images/icons/facebookBlue.png" alt="facebook" loading="lazy" />
+                                Facebook
+                            </button>
+                            <button type="button">
+                                <img src="./assets/images/icons/google-icon.png" alt="facebook" loading="lazy" />
+                                Google
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form_line d-none" id="form_line"></div>
+
+                    <p class="already_sign-btn d-none font-size-14 mt-3 border w-100 rounded-md text-center p-2 cursor-pointer"
+                        id="already_sign-btn">
+                        Already have account? Sign In
+                    </p>
+
+                    <p class="font-size-11 mt-3" id="login-policy">
+                        By signing in, I agree to Xl Travel
+                        <a href="">Terms of Use</a> and
+                        <a href="">GDPR.EU</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./utils/helpCenter.js"></script>
+    <script src="./utils/commonFunctions.js"></script>
+    <script src="./utils/publicReview.js"></script>
+</body>
+
+</html>

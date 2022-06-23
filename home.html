@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <link rel="stylesheet" href="./assets/style/home.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>XlTravel</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-main d-flex justify-content-between align-items-center container-main py-3 px-3 px-lg-0">
+      <div class="header-logo">
+        <a href="/">
+          <img class="cursor-pointer" src="assets/images/Group 40231.png" alt="xlTravel-Logo" />
+        </a>
+      </div>
+      <div>
+        <nav class="nav-bar d-none d-lg-block">
+          <ul class="d-flex align-items-center">
+            <li><a href="./home.html">Home</a></li>
+            <li>
+              <a href="/listing.html">Properties</a>
+            </li>
+            <li><a>Blog</a></li>
+            <li><a>FAQs</a></li>
+            <li><a>Contact</a></li>
+            <li><a href="./become-host.html">Become a host</a></li>
+            <button class="yellow-button">Register</button>
+          </ul>
+        </nav>
+        <div class="d-block d-lg-none">
+          <input type="checkbox" id="openSideMenu" class="openSideMenu" />
+          <label for="openSideMenu" class="menuIconToggle">
+            <div class="hamb-line dia part-1"></div>
+            <div class="hamb-line hor"></div>
+            <div class="hamb-line dia part-2"></div>
+          </label>
+          <nav class="mobile-nav">
+            <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="/listing.html">Properties</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="./become-host.html">Become a host</a></li>
+              <div class="d-flex justify-content-center align-items-center pt-3">
+                <button class="yellow-button">Register</button>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+  <!-- Hero Section -->
+  <section class="Hero-Section container">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center overflow-hidden">
+      <div class="image-side col-12 col-lg-6 position-relative p-0">
+        <img class="bottom-image" src="assets/images/menAlone.png" alt="men-standing" />
+        <img class="top-image" src="assets/images/menPhotography.png" alt="men-with-camera" />
+      </div>
+      <div class="text-side col-12 col-lg-6">
+        <div class="text-side-inner">
+          <div class="hero-section-main-text">
+            <p>The Most Relaxing Vacation Places</p>
+          </div>
+          <div>
+            <p class="hero-section-inner-text">
+              A vacation is having nothing to do and all day to do it in. Our
+              resorts are designed to inspire and delight every sense.
+            </p>
+          </div>
+          <div>
+            <button class="yellow-button">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search mx-0 mx-lg-5">
+      <div class="search-now">
+        <div class="search-now-inner d-flex flex-column flex-lg-row align-items-center">
+          <div class="col-12 col-lg-3">
+            <div class="search-now-single">
+              <button class="btn dropdown-toggle search-now-single bg-transparent" type="button" data-toggle="dropdown">
+                Destination
+              </button>
+              <p class="search-select">Select</p>
+              <ul class="dropdown-menu" id="destination">
+                <li value="Example One">Example One</li>
+                <li value="Example Two">Example Two</li>
+                <li value="Example Three">Example Three</li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center col-12 col-lg-3">
+            <div class="search-now-single">
+              <button class="btn dropdown-toggle search-now-single bg-transparent" type="button" data-toggle="dropdown">
+                Checkin-checkout
+              </button>
+              <p class="search-select">Select</p>
+              <ul class="dropdown-menu" id="Checkin-checkout">
+                <li value="Example One">Example One</li>
+                <li value="Example Two">Example Two</li>
+                <li value="Example Three">Example Three</li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center col-12 col-lg-3">
+            <div class="search-now-single">
+              <button class="btn dropdown-toggle search-now-single bg-transparent" type="button" data-toggle="dropdown">
+                Guests
+              </button>
+              <p class="search-select">Select</p>
+              <ul class="dropdown-menu" id="Guests">
+                <li value="Example One">Example One</li>
+                <li value="Example Two">Example Two</li>
+                <li value="Example Three">Example Three</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="cursor-pointer search-bar-main col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#33270d" width="20.739" height="20.739"
+              viewBox="0 0 25.739 25.739">
+              <g data-name="Group 40242">
+                <g data-name="Group 40241">
+                  <path data-name="Path 75926"
+                    d="M11.335 0A11.335 11.335 0 1 0 22.67 11.335 11.348 11.348 0 0 0 11.335 0zm0 20.577a9.242 9.242 0 1 1 9.242-9.242 9.253 9.253 0 0 1-9.242 9.242z" />
+                </g>
+              </g>
+              <g data-name="Group 40244">
+                <g data-name="Group 40243">
+                  <path data-name="Path 75927"
+                    d="m25.433 23.953-6-6a1.046 1.046 0 0 0-1.479 1.479l6 6a1.046 1.046 0 0 0 1.479-1.479z" />
+                </g>
+              </g>
+            </svg>
+            <div class="search-bar d-flex align-items-center justify-content-center">
+              <p class="search-bar">Search now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End-->
+  <!-- Find Travel Perfection Section -->
+  <section class="find-travel-perfection">
+    <div>
+      <p class="main-heading">Find Travel perfection</p>
+      <p class="inner-heading">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doi
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco lab.
+      </p>
+    </div>
+    <div></div>
+  </section>
+  <!-- Find Travel Perfection Section End-->
+  <!-- Cards Section-->
+  <section class="homepage-cards container">
+    <div class="d-flex flex-column flex-lg-row flex-wrap">
+      <div data-aos="zoom-in" class="cursor-pointer cards-inner col-12 col-lg-4">
+        <div class="cards-inner-wrapper d-flex flex-column justify-content-center align-items-center">
+          <div class="card-image-outer">
+            <img class="card-image-inner" src="./assets/images/star.png" alt="star" />
+          </div>
+          <p class="card-heading">NO COMMISSIONS</p>
+          <p class="card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doi
+            eiusmod temp
+          </p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="cursor-pointer cards-inner col-12 col-lg-4">
+        <div class="cards-inner-wrapper d-flex flex-column justify-content-center align-items-center">
+          <div class="card-image-outer-yellow">
+            <img class="card-image-inner" src="./assets/images/yellow-star.png" alt="star" />
+          </div>
+          <p class="card-heading">+20.000 UNITS</p>
+          <p class="card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doi
+            eiusmod temp
+          </p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="cursor-pointer cards-inner col-12 col-lg-4">
+        <div class="cards-inner-wrapper d-flex flex-column justify-content-center align-items-center">
+          <div class="card-image-outer">
+            <img class="card-image-inner" src="./assets/images/star.png" alt="star" />
+          </div>
+          <p class="card-heading">UP TO 40% OFF</p>
+          <p class="card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doi
+            eiusmod temp
+          </p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="cursor-pointer cards-inner col-12 col-lg-4">
+        <div class="cards-inner-wrapper d-flex flex-column justify-content-center align-items-center">
+          <div class="card-image-outer">
+            <img class="card-image-inner" src="./assets/images/star.png" alt="star" />
+          </div>
+          <p class="card-heading">COMMUNICATION WITH OWNERS</p>
+          <p class="card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doi
+            eiusmod temp
+          </p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="cursor-pointer cards-inner col-12 col-lg-4">
+        <div class="cards-inner-wrapper d-flex flex-column justify-content-center align-items-center">
+          <div class="card-image-outer-yellow">
+            <img class="card-image-inner" src="./assets/images/yellow-star.png" alt="star" />
+          </div>
+          <p class="card-heading">EASY & SAFE</p>
+          <p class="card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doi
+            eiusmod temp
+          </p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" class="cursor-pointer cards-inner col-12 col-lg-4">
+        <div class="cards-inner-wrapper d-flex flex-column justify-content-center align-items-center">
+          <div class="card-image-outer">
+            <img class="card-image-inner" src="./assets/images/star.png" alt="star" />
+          </div>
+          <p class="card-heading">TRAVEL VIRTUAL ASSISTENT</p>
+          <p class="card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doi
+            eiusmod temp
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cards Section End-->
+  <!-- New Offer Section -->
+  <section class="new-offers container">
+    <div class="new-offer-text">
+      <p class="new-offer-main-heading">New Offers</p>
+      <p class="new-offer-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doi
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco lab.
+      </p>
+    </div>
+    <div class="new-offer-card-section d-flex flex-column flex-lg-row justify-content-between flex-wrap">
+      <div data-aos="zoom-out" class="new-offers-card cursor-pointer">
+        <div class="new-offers-card-inner">
+          <div class="new-offer-image">
+            <div class="new-offer-image-heart cursor-pointer">
+              <img loading="lazy" src="./assets/images/icons/heart.png" alt="heart" />
+            </div>
+          </div>
+          <div class="new-offer-card-text bg-white px-4 pb-4">
+            <p class="new-offer-card-heading pt-3">
+              Holiday House | Big Terrace and BBQ
+            </p>
+            <p class="new-offer-card-location-description">
+              <img class="mr-2" src="./assets/images/icons/location-pin.png" alt="location-icon" />
+              217, Filovci, Moravske Toplice, 92...
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="price">
+                  €145 <span class="per-night">/night</span>
+                </p>
+              </div>
+              <div>
+                <p>
+                  Compare to others
+                  <span><img class="cursor-pointer" src="./assets/images/icons/right-arrow.png"
+                      alt="right-arrow" /></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-out" class="new-offers-card cursor-pointer">
+        <div class="new-offers-card-inner">
+          <div class="new-offer-image">
+            <div class="new-offer-image-heart cursor-pointer">
+              <img loading="lazy" src="./assets/images/icons/heart.png" alt="heart" />
+            </div>
+          </div>
+          <div class="new-offer-card-text bg-white px-4 pb-4">
+            <p class="new-offer-card-heading pt-3">
+              Holiday House | Big Terrace and BBQ
+            </p>
+            <p class="new-offer-card-location-description">
+              <img class="mr-2" src="./assets/images/icons/location-pin.png" alt="location-icon" />
+              217, Filovci, Moravske Toplice, 92...
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="price">
+                  €145 <span class="per-night">/night</span>
+                </p>
+              </div>
+              <div>
+                <p>
+                  Compare to others
+                  <span><img class="cursor-pointer" src="./assets/images/icons/right-arrow.png"
+                      alt="right-arrow" /></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-out" class="new-offers-card cursor-pointer">
+        <div class="new-offers-card-inner">
+          <div class="new-offer-image">
+            <div class="new-offer-image-heart cursor-pointer">
+              <img loading="lazy" src="./assets/images/icons/heart.png" alt="heart" />
+            </div>
+          </div>
+          <div class="new-offer-card-text bg-white px-4 pb-4">
+            <p class="new-offer-card-heading pt-3">
+              Holiday House | Big Terrace and BBQ
+            </p>
+            <p class="new-offer-card-location-description">
+              <img class="mr-2" src="./assets/images/icons/location-pin.png" alt="location-icon" />
+              217, Filovci, Moravske Toplice, 92...
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <p class="price">
+                  €145 <span class="per-night">/night</span>
+                </p>
+              </div>
+              <div>
+                <p>
+                  Compare to others
+                  <span><img class="cursor-pointer" src="./assets/images/icons/right-arrow.png"
+                      alt="right-arrow" /></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- New Offer Section End -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

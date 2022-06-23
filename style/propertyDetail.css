@@ -1,0 +1,647 @@
+/* Common Heading For property Detail Page */
+.main-heading {
+  font-size: 13px;
+  font-weight: bold;
+}
+/*Sticky header-hide toggle*/
+.show-header {
+  display: none;
+}
+.header-show {
+  display: block;
+  animation: 0.8s ease-in-out;
+}
+/*Sticky header-hide toggle Ends*/
+
+/* Sticky Price Header */
+.sticky-price-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/* Hero Section */
+
+/* Properties Detail Left Side */
+.facalities-icons-main .single-facality {
+  margin-right: 38px;
+}
+.property-detail .progress-detial-left-side {
+  width: 68%;
+}
+/* Property page listing styling */
+.propery-page-listing {
+  list-style: none;
+  padding: 0px;
+}
+.propery-page-listing li {
+  font-size: 11px;
+  opacity: 0.9;
+  color: #40d0d3;
+}
+.propery-page-listing li img {
+  margin-top: 3px;
+}
+/* Home Page Image Slider */
+.property-image-slider .property-image-slider-wrapper {
+  padding-top: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* property-image-collage */
+.property-image-collage .property-collage-first-image .collage-image {
+  min-height: 399px;
+  width: 100%;
+}
+.property-image-collage .image-collage-hover {
+  transition: transform 0.2s;
+}
+.property-image-collage .image-collage-hover:hover {
+  transform: scale(1.02);
+}
+.property-image-collage .property-collage-second-image .collage-image {
+  height: 196px;
+  width: 100%;
+}
+.property-image-collage .property-collage-third-image .collage-image {
+  height: 196px;
+  width: 100%;
+}
+.property-image-collage .property-collage-fourth-image .collage-image {
+  width: 100%;
+  height: 196px;
+  border-top-right-radius: 14px;
+}
+.property-image-collage .property-collage-fifth-image .collage-image {
+  height: 196px;
+  border-bottom-right-radius: 14px;
+  width: 100%;
+}
+/* Slider */
+
+/* Home page width */
+.property-detail-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+  .card-body {
+    align-items: center;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+.slider-property .carousel-control-next {
+  right: -26px !important;
+}
+.carousel-item .card-body {
+  padding: 14px 20px;
+  border-radius: 12px;
+}
+/* Slider Ends */
+/* ProgressBar  */
+.property-progress .progress {
+  height: 4px;
+  width: 80%;
+}
+.property-progress .progress-bar {
+  background-color: #808080;
+  opacity: 0.8;
+}
+.reviews-section .reviews-section-inner {
+  width: 45%;
+}
+.reviews-section .reviews-left {
+  width: 57%;
+}
+.reviews-section .rules-right {
+  width: 42%;
+}
+/* video secion */
+.video-section iframe {
+  height: 475px;
+}
+.map-section iframe {
+  height: 475px;
+}
+/* Right SIde Cards */
+.cards-right {
+  width: 31%;
+}
+.cards-right .hosted-card-second {
+  background-image: linear-gradient(#40d0d3, #ffffff);
+}
+.property-form .property-form-input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  outline: none;
+}
+.property-form ::-webkit-input-placeholder {
+  font-size: 10px;
+  color: #848280;
+  font-weight: 500;
+}
+.select-outer {
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 0px 0px;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100% !important;
+}
+.property-form-input-number {
+  padding: 0px 7px !important;
+  outline: none !important;
+}
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show > .btn-light.dropdown-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+.border-bottom-none {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.bootstrap-select .dropdown-menu.inner {
+  background-color: #40d0d3;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #36afb1 !important;
+}
+.dropdown-adult-children .dropdown-menu {
+  padding: 0px 0px;
+  min-height: 76px !important;
+  min-width: 100% !important;
+  transform: translate3d(0px, 25px, 0px) !important;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+/*  btn dropdown-toggle btn-light*/
+.dropdown-adult-children .dropdown-menu .inner {
+  transform: unset !important;
+  max-height: 150px !important;
+  background-color: turquoise;
+}
+.dropdown-adult-children .btn-light {
+  background-color: transparent !important;
+  outline: none;
+  border: none !important;
+}
+.dropdown-adult-children .dropdown-menu ul li a {
+  font-size: 13px;
+}
+.dropdown-menu a:hover {
+  background-color: #36afb1 !important;
+  animation: ease-in-out linear;
+}
+.btn:not(:disabled):not(.disabled) {
+  font-size: 13px;
+  color: #808080;
+}
+/* CheckBox */
+.cb-label {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 100;
+}
+
+/* Hide the browser's default checkbox */
+.cb-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 19px;
+  width: 19px;
+  background-color: transparent;
+  border: 1.5px solid #ffc044;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+
+/* When the checkbox is checked, add a blue background */
+.cb-label input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.cb-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.cb-label .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 1.2px 1.2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* CheckBox End */
+
+.property-form-input-number {
+  background-color: white;
+  border-radius: 10px;
+  width: 95%;
+  border: none;
+  outline: none;
+  padding: 12px 14px;
+}
+.property-form-input-number ::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+.property-form .property-form-input {
+  width: 100%;
+}
+.property-form label {
+  margin-bottom: 5px !important;
+}
+.form-yellow-button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 9px;
+  background-color: #ffc044;
+  padding: 9px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+.form-yellow-button:hover {
+  transform: scale(1.1);
+}
+.form-yellow-button:focus {
+  outline: none !important;
+}
+.property-surrounding-list {
+  width: 47%;
+  margin: 0 auto;
+}
+/* All Photos Carousel */
+
+/* Responsive */
+@media (max-width: 1023px) and (min-width: 320px) {
+  .main-heading {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .sub-heading {
+    font-size: 13px;
+  }
+  .rh_banner__cover {
+    height: 66px;
+  }
+  .Price-form-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .property-detail-left-side .country-detail {
+    font-size: 12px;
+  }
+  .rating-hero-section {
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    top: -28px;
+  }
+  .swiper-slide .single-comment {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-left: 3px;
+  }
+  .rooms-slider {
+    width: 100% !important;
+  }
+  .reviews-button button {
+    width: 100%;
+  }
+  .property-image-collage .property-collage-first-image {
+    min-height: 231px;
+  }
+  .property-image-collage .property-collage-second-image {
+    min-height: 112px;
+  }
+  .property-image-collage .property-collage-third-image {
+    min-height: 112px;
+  }
+  .property-image-collage .property-collage-fourth-image {
+    min-height: 112px;
+  }
+
+  .property-detail .progress-detial-left-side {
+    width: 100%;
+  }
+  .property-image-slider {
+    overflow: hidden;
+  }
+  .property-image-slider .property-image-slider-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .hero-section {
+    margin-top: 90px;
+  }
+  .property-detail .property-detail-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .property-detail-wrapper .property-icon {
+    width: 100%;
+    justify-content: flex-end;
+    position: relative;
+    top: -19px;
+  }
+  .property-detail-wrapper .property-icon img {
+    height: 14px !important;
+  }
+  .video-section iframe {
+    height: 200px;
+  }
+  .map-section iframe {
+    height: 200px;
+  }
+  .facalities-icons-main .single-facality {
+    width: 33%;
+    margin-top: 20px;
+    margin-right: 0px !important;
+  }
+  .description-text .description-detail {
+    font-size: 15px !important;
+    line-height: 24px;
+  }
+  .facalities-icons-main .single-facality p {
+    font-size: 14px;
+  }
+  .facalities-icons-main .facalities-icons-inner {
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+  /* Right side cards */
+  .cards-right {
+    width: 100%;
+  }
+  .dropdown-item {
+    padding: 0.25rem 0.5rem !important;
+  }
+  .dropdown .btn-secondary {
+    background-color: #bfbfbf !important;
+    border: none;
+    padding: 2px 43px;
+  }
+  .cards-right .hosted-card .host-name {
+    font-size: 14px;
+  }
+  .cards-right .hosted-card .join-date {
+    font-size: 13px;
+  }
+  .cards-right .hosted-card .response-time {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .reservation-header {
+    position: sticky;
+    top: 0;
+  }
+  .reserve-form-mobile {
+    display: none;
+  }
+  .reserve-card-mobile {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    overflow-y: scroll;
+  }
+  .calendar {
+    width: 100%;
+  }
+  .property-facalities p {
+    font-size: 8px !important;
+  }
+  .aminenites-facalities .amineties-category {
+    font-size: 13px;
+  }
+  .charges p {
+    font-size: 8px;
+  }
+  /* Review Section */
+  .reviews-section .reviews-section-inner {
+    width: 100%;
+  }
+  .reviews-section .reviews-left {
+    width: 100%;
+  }
+  .reviews-section .rules-right {
+    width: 100%;
+  }
+  .property-form .property-form-input {
+    width: 100%;
+  }
+
+  /* Right Side Form */
+  .property-form-input-number {
+    width: 119px;
+    padding: 9px 9px;
+  }
+  .property-surrounding-list {
+    width: 100%;
+  }
+  .propery-page-listing li {
+    margin-right: 0px !important;
+  }
+  /* Carousel */
+  .carousel-control-next {
+    right: -17px !important;
+  }
+  /* mobile carousel hero section */
+  .swiper-container-hero-section .swiper-wrapper {
+    height: unset !important;
+  }
+  .swiper-container-hero-section .swiper-button-next,
+  .swiper-button-prev {
+    top: 48% !important;
+    height: 19px !important;
+  }
+}
+.swiper-container-hero-section .numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 6px;
+  right: 9px;
+  background-color: rgba(8, 5, 5, 0.486);
+  border-radius: 15px;
+}
+.swiper-container-hero-section .swiper-slide {
+  width: 100% !important;
+  margin: 0px !important;
+}
+.image-gallery-mobile .grid-container {
+  display: grid;
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.image-gallery-mobile .grid-item {
+  text-align: center;
+  font-size: 30px;
+}
+
+.image-gallery-mobile .item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.image-gallery-mobile .item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.image-gallery-mobile .item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+.image-gallery-mobile {
+  position: fixed;
+  inset: 0;
+  top: 50px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  z-index: 450;
+}
+.modal-body {
+  padding: 0px !important;
+}
+.modal-dialog .modal-content {
+  top: 140px !important;
+}
+#image-gallery-carousel {
+  display: none;
+}
+.image-gallery-mobile .gallery-header {
+  background-color: white;
+  min-height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 110;
+}
+.image-gallery-mobile .thumbnail {
+  border: none !important;
+  background-color: transparent !important;
+  margin-bottom: 0px !important;
+}
+/* Swipper */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container-room {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  margin-right: 10px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*Gallery */
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+#image-gallery .modal-footer {
+  display: block;
+}
+
+.thumb {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

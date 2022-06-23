@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.font-fam {
+  font-family: "lora", Rubik !important;
+}
+.trips-padding {
+  padding: 30px 40px;
+}
+.cheak-box-bg {
+  background-color: #cfcfcf;
+  border-radius: 10px;
+}
+input[type="checkbox"] {
+  width: 21px;
+  height: 16px;
+  padding: 1px;
+  accent-color: #00ffff;
+  opacity: 0.8;
+  border: none;
+}
+
+.check-box-width {
+  width: 48%;
+}
+
+/* media queries */
+@media (min-width: 320px) {
+  .w-38 {
+    width: 100%;
+  }
+  .trips-padding {
+    padding: 30px 18px;
+  }
+  .w-48 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-38 {
+    width: 75%;
+  }
+  .trips-padding {
+    padding: 30px 40px;
+  }
+  .w-48 {
+    width: 48%;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-38 {
+    width: 52%;
+  }
+  .trips-padding {
+    padding: 30px 40px;
+  }
+  .w-48 {
+    width: 48%;
+  }
+}

@@ -1,0 +1,494 @@
+/* Common Main Heading */
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-heading {
+  font-size: 21px;
+  font-weight: 500;
+  color: #000;
+}
+.sub-heading {
+  font-size: 19px;
+  color: #000;
+  -webkit-text-stroke: 0.3px #000;
+  opacity: 0.6;
+}
+.listing-page-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+/* Badge */
+.yellow-badge {
+  border-radius: 4px;
+  padding: 8px 12px;
+  left: -17px;
+  top: 12px;
+}
+.yellow-badge::after {
+  content: "";
+  border-left: 9px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 9px solid #ffc044;
+  position: absolute;
+  left: 0px;
+  bottom: -7px;
+}
+.tealish-badge {
+  border-radius: 4px;
+  padding: 8px 12px;
+  left: -8px;
+  top: 12px;
+}
+.tealish-badge::after {
+  content: "";
+  border-left: 9px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 9px solid #40d0d3;
+  position: absolute;
+  left: 0px;
+  bottom: -7px;
+}
+/* listing-property-type-dropDown */
+.filter-section .filter-wrapper {
+  width: 80%;
+  margin: 0 0;
+}
+.filter-section .filter-bar {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+}
+.filter-section .dropdown {
+  transition: transform 0.2s;
+}
+.filter-section .dropdown:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+}
+.listing-filter-dropDown .dropdown-menu.show {
+  transform: translate3d(1px, 55px, 0px) !important;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.listing-filter-dropDown .dropdown-menu {
+  width: 479px;
+}
+.small-modal .dropdown-menu {
+  width: 217px !important;
+}
+.property-property-facalities .dropdown-menu {
+  height: 360px;
+  overflow-y: scroll;
+}
+.listing-filter-dropDown input[type="checkbox"],
+input[type="radio"] {
+  margin: 0px 10px 0px 0px;
+}
+.listing-filter-dropDown .dropdown-menu li a label {
+  font-size: 13px;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 7px 0px;
+}
+.listing-filter-dropDown .dropdown-menu .option {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #fec657;
+}
+.listing-filter-dropDown .dropdown-menu .option-property-facalities {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #fec657;
+}
+.listing-filter-dropDown .dropdown-menu .option-property-ratings {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #fec657;
+}
+.listing-filter-dropDown .dropdown-menu .selectall {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #fec657;
+}
+.listing-filter-dropDown .dropdown-menu .select-all-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #fec657;
+}
+.select-all-text {
+  font-size: 13px;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.btn:not(:disabled):not(.disabled) {
+  padding: 13px 19px;
+  background-color: rgba(225, 225, 225, 0.68);
+}
+.filter-focus:focus {
+  background-color: #fec657 !important;
+}
+.filter-button {
+  color: white;
+  border: none;
+  padding: 19px 23px;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+.filter-button:hover {
+  transform: scale(1.1);
+}
+
+/* Price Range in lisitng filter*/
+.price-range input {
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 21px 0px 7px 0px;
+  width: 100%;
+}
+.price-range .clear-button {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-size: 18px;
+  color: rgb(190, 178, 178);
+  font-weight: 400;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.price-range .clear-button:hover {
+  text-decoration: none;
+}
+.irs--round {
+  width: 88%;
+  margin: 0 auto;
+}
+.irs--round .irs-bar {
+  background-color: #00c2c0 !important;
+}
+
+.irs--round .irs-handle {
+  background-color: #67ebe8;
+  border-color: #00c2c0 !important;
+  box-shadow: 0px 0px 0px 5px rgba(0, 194, 192, 0.2);
+}
+.irs-from,
+.irs-to {
+  background-color: #00c2c0 !important;
+}
+.irs--round .irs-from:before {
+  border-top-color: #00c2c0 !important ;
+}
+.irs--round .irs-to:before {
+  border-top-color: #00c2c0 !important ;
+}
+.irs--round .irs-handle.state_hover,
+.irs--round .irs-handle:hover {
+  background-color: #00c2c0 !important;
+}
+
+.irs--round .irs-handle {
+  width: 16px;
+  height: 16px;
+  top: 29px;
+}
+
+.irs--round .irs-from,
+.irs--round .irs-to,
+.irs--round .irs-single {
+  background-color: transparent;
+  color: #666666;
+}
+
+.irs--round .irs-from:before,
+.irs--round .irs-to:before,
+.irs--round .irs-single:before,
+.irs--round .irs-min,
+.irs--round .irs-max {
+  display: none;
+}
+
+/************************* Listing Left Side ************************************ */
+.lisiting-inner-content .listing-left-wrapper {
+  width: 64%;
+}
+.lisiting-inner-content .listing-right-wrapper {
+  width: 33%;
+  margin-top: 60px;
+}
+.lisiting-inner-content .listing-left-wrapper .listing-featured-inner-card {
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10px;
+  padding: 11px 14px;
+  border-radius: 13px;
+  left: 0;
+  right: 0;
+}
+
+.listing-premium-card-first {
+  background-image: url("../../assets/images/house-premium.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 187px;
+  width: 30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.single-premium-card {
+  background-image: url("../../assets/images/single-premium-card.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 187px;
+  width: 30%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.listing-premium-center-card {
+  width: 44%;
+}
+
+.something-for-you-image {
+  background-image: url("../images/something-foe-you.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 261px;
+}
+.something-for-you-image .image-inner-card {
+  right: 10px;
+  top: 12px;
+  border-radius: 12px;
+}
+/* More Filters popup */
+.more-filters input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.more-filters .more-filters-number-input {
+  border: none;
+  width: 22%;
+  font-size: 15px;
+  text-align: center;
+}
+.more-filters .more-filters-number-input::placeholder {
+  font-size: 15px;
+}
+.more-filters .checkbox-more-filters {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #fec657;
+  margin: 0px;
+}
+
+/* Show more and less listing */
+.show-more-less ul {
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  background: white;
+  padding: 0px;
+}
+.show-more-less li {
+  height: 50px;
+  line-height: 50px;
+}
+
+.listing-button-propertyFilter {
+  background-color: transparent;
+  border: none;
+}
+/* Buttons for property filter */
+.filter-button-property-type {
+  padding: 12px 42px;
+  border-radius: 11px;
+  border: none;
+  transition: transform 0.2s;
+}
+.filter-button-property-type:hover {
+  transform: scale(1.07);
+}
+/* CHECKED STATE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.show-more-less [type="checkbox"]:checked ~ ul {
+  max-height: 300px;
+}
+
+.show-more-less [type="checkbox"]:checked + label {
+  top: 100%;
+}
+
+.show-more-less [type="checkbox"]:checked + label:before {
+  content: "Show less amenities";
+}
+
+.show-more-less [type="checkbox"]:checked + label:after {
+  content: "⇡●";
+}
+
+.show-more-less ul li:last-child {
+  margin-bottom: 40px;
+}
+/* Filter PopUp */
+.filter-popup-desktop {
+  background-color: rgba(0, 0, 0, 0.425);
+  inset: 0;
+  z-index: 9;
+  overflow-y: scroll;
+}
+#filter-button-popup {
+  display: none;
+}
+
+.filter-popup-desktop .more-filters-wrapper {
+  margin-top: 48px;
+}
+/* Responsive */
+@media (max-width: 1023px) and (min-width: 320px) {
+  .hero-section {
+    min-height: 66px;
+    position: relative;
+    top: 41px;
+  }
+  .lisiting-inner-content .listing-left-wrapper {
+    width: 100%;
+  }
+  .lisiting-inner-content .listing-right-wrapper {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .listing-wrapper {
+    padding-top: 0px;
+  }
+  /* Filter banner mobile */
+  .filter-mobile-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .card-badge-headings-mobile {
+    font-size: 10px;
+  }
+  .yellow-badge {
+    font-size: 10px;
+  }
+  .tealish-badge {
+    font-size: 10px;
+  }
+  .main-heading {
+    font-size: 16px;
+  }
+  .sub-heading {
+    font-size: 13px;
+  }
+  .listing-premium-card-first {
+    width: 100%;
+  }
+  .listing-premium-center-card {
+    width: 100%;
+  }
+  .listing-card-inner-third {
+    width: 100%;
+  }
+  .single-premium-card {
+    width: 100%;
+  }
+  .lisiting-inner-content .listing-left-wrapper .listing-featured-inner-card {
+    width: 96%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    padding: 9px 10px;
+    border-radius: 13px;
+  }
+  .sub-heading-featured-card {
+    font-size: 14px;
+  }
+  .city-name-heading {
+    font-size: 18px;
+  }
+  .facalities-icons-inner p {
+    font-size: 13px !important;
+  }
+  .single-facality p {
+    font-size: 14px !important;
+  }
+  .card-heading-right-side {
+    font-size: 15px;
+  }
+  /* property-facalities-mobile */
+  .property-facalities-mobile {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background-color: white;
+    overflow-y: scroll;
+    padding-bottom: 90px;
+    padding-top: 30px;
+  }
+  .filter-button-property-type {
+    width: 46%;
+    padding: 10px 16px;
+  }
+  .property-facalities-mobile-header {
+    background-color: white;
+    min-height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 110;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+  }
+  #listing-filter-mobile {
+    display: none;
+  }
+  #filter-location {
+    border: none;
+    width: 33%;
+    background-color: transparent;
+    font-size: 12px;
+  }
+  .mobile-filter-banner-left {
+    background-color: transparent;
+    /* padding:2px 5px 5px 0px; */
+    border-radius: 5px;
+  }
+  .mobile-filter-banner-left input::placeholder {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  .mobile-circle-inc-dec {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.11);
+  }
+  /* .property-facalities-mobile {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #fec657;
+  } */
+  .irs--round {
+    width: 92%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo2.png" />
+  <!-- Style sheets link-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <link rel="stylesheet" href="./assets/style/index.css" />
+  <link rel="stylesheet" href="./assets/style/listYourProperty.css" />
+
+  <!-- Scripts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- AOS Aniamtion -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <title>List Your Property</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div
+      class="header-index header-wrapper d-flex justify-content-between align-items-center container-main py-3 px-3 px-xl-0">
+      <div class="header-logo">
+        <a href="/">
+          <img loading="lazy" style="height: 86px" class="cursor-pointer" src="assets/images/logo.png"
+            alt="xlTravel-Logo" />
+        </a>
+      </div>
+      <div class="d-block d-lg-none w-70 mx-auto">
+        <div id="header-search-mobile" class="header-search-mobile hide" onclick="displayBlock(`search-index`)">
+          <div class="d-flex justify-content-center position-relative align-items-center">
+            <input class="w-100 mobile-search-input-header mx-auto pl-4 py-1 box-shadow" disabled
+              placeholder="Hey! Where do you want to go?" />
+            <svg style="left: 10%; top: 30%" class="svg-icon position-absolute" fill="#00b2d3"
+              aria-labelledby="title desc" height="15" width="15" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 19.9 19.7">
+              <title id="title">Search Icon</title>
+              <desc id="desc"></desc>
+              <g class="search-path" fill="none" stroke="#00b2d3">
+                <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+                <circle cx="8" cy="8" r="7" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <nav class="nav-bar d-none d-lg-block">
+          <ul class="d-flex align-items-center list-unstyled">
+            <li><a href="/home.html">Home</a></li>
+            <li>
+              <a class="hot-deail-text position-relative d-flex align-items-center justify-content-center"><img
+                  class="position-absolute" style="height: 24px; top: -21px" src="./assets/images/icons/hot-deal.gif"
+                  alt="hot-deatil" />Hot Deals</a>
+            </li>
+            <li><a>Xl Travel Zone</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./help-center.html">Help Center</a></li>
+            <li><a>Host Zone</a></li>
+            <li>
+              <a href="./list-your-property.html"><button
+                  class="teaslih-text-button cursor-pointer background-color-tealish text-white">
+                  List Your Property
+                </button></a>
+            </li>
+            <li class="mr-0">
+              <a>
+                <button
+                  class="login-signup_btn tealish-gradient-button d-flex justify-content-center align-items-center cursor-pointer">
+                  <img class="mr-2" height="13px" src="./assets/images/icons/lock.png" alt="lock" />
+                  LOGIN / SIGN UP
+                </button></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="d-block d-lg-none">
+          <input type="checkbox" id="openSideMenu" class="openSideMenu" />
+          <label for="openSideMenu" class="menuIconToggle">
+            <div class="hamb-line dia part-1"></div>
+            <div class="hamb-line hor"></div>
+            <div class="hamb-line dia part-2"></div>
+          </label>
+          <nav class="mobile-nav">
+            <ul>
+              <li><a href="/home.html">Home</a></li>
+              <li>
+                <a href="#" class="hot-deail-text d-flex align-items-center">Hot Deals
+                  <img style="
+                        height: 27px;
+                        margin-left: 12px;
+                        margin-bottom: 8px;
+                      " src="./assets/images/icons/hot-deal.gif" alt="hot-deatil" /></a>
+              </li>
+              <li><a href="#">Xl Travel Zone</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./help-center.html">Help Center</a></li>
+              <li><a href="#">Host Zone</a></li>
+              <div class="d-flex flex-column align-items-center pt-2 px-2">
+                <a href="./list-your-property.html">
+                  <button class="teaslih-text-button cursor-pointer">
+                    List Your Property
+                  </button>
+                </a>
+                <button
+                  class="login-signup_btn tealish-gradient-button mt-4 d-flex justify-content-center align-items-center cursor-pointer"
+                  onclick="displayBlock(`login-form`)">
+                  <img class="mr-2" height="13px" src="./assets/images/icons/lock.png" alt="lock" />
+                  LOGIN / SIGN UP
+                </button>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+  <!-- Hero Section -->
+  <section class="hero-section overflow-hidden">
+    <div class="hero-section-inner container-main">
+      <img src="./assets/images/dots.png" alt="Dots" loading="lazy" data-aos="fade-up" data-aos-duration="1000"
+        class="dots top-down-animation d-none d-lg-block" />
+      <div class="d-flex">
+        <div data-aos="fade-up" data-aos-duration="1000" class="hero-section-inner_text">
+          <p class="text-white">
+            Fill Your Accommodation with sky rocket speed
+          </p>
+
+          <p class="hero-section_main-title text-white font-size-35 font-weight-600 pt-2 pb-4">
+            Are You Ready To Get More Booking You Can Possibly Imagine.
+          </p>
+          <p class="text-white pb-4">
+            Easily Host Your Place & Get More Bookings On XL Travel Today For
+            Free
+          </p>
+          <button
+            class="hero-btn yellow-button d-flex flex-column justify-content-center align-items-center text-white px-2 px-sm-4 mt-1 top-down-animation">
+            <p class="font-size-16 font-weight-600">
+              LIST YOUR PROPERTY
+              <span class="d-block d-sm-inline">FOR FREE NOW</span>
+            </p>
+            <p class="font-size-12">
+              Be Quick! FREE Spot Are Almost Gone For May
+            </p>
+          </button>
+          <div class="d-flex justify-content-center justify-content-md-start align-items-center pt-3">
+            <div class="d-flex align-items-center">
+              <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="start" />
+              <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="start" />
+              <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="start" />
+              <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="start" />
+              <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="start" />
+            </div>
+            <p class="rating-text text-white font-size-14 mr-1 mr-sm-2 ml-3">
+              4.6 stars out of 412 reviews
+            </p>
+            <img src="./assets/images/icons/white-verified.png" alt="verified" width="20" />
+          </div>
+        </div>
+
+        <figure data-aos="fade-down" data-aos-duration="1000" class="hero-section-inner_image w-50 d-none d-lg-block">
+          <img src="./assets/images/home-5-main-banner@3x.webp" width="400" alt="Room decorated with two sofas"
+            loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End-->
+  <!-- Features Section Starts -->
+  <section class="pros-section pt-5 pb-sm-5 pb-0 container-main mx-auto overflow-hidden">
+    <div class="d-flex justify-content-center align-items-center pt-3">
+      <p class="feature-title color-blue font-weight-500 font-size-28 text-center mx-2 text-capitalize">
+        Why You Should Be Part Of XL TRAVEL
+      </p>
+    </div>
+    <div class="commission-pros d-flex flex-wrap justify-content-start justify-content-lg-center px-4 px-lg-5">
+      <div data-aos="zoom-in-up" class="feature w-31 mx-auto mt-5">
+        <div class="d-flex">
+          <div class="feature-icon bg-white d-flex justify-content-center align-items-center box-shadow rounded-md">
+            <img loading="lazy" src="./assets/images/icons/man-with-bag.webp" />
+          </div>
+          <div class="feature-text ml-2 ml-md-4">
+            <h class="font-weight-500 text-capitalize">150,000 visitors per month
+            </h>
+            <p class="feature-text__para dark-gray text-capitalize pt-2 opacity-8 font-normal font-size-14 w-88">
+              We are taking care that every visitor experiences only the best
+              of our platform. Therefore people are returning to us all the
+              time and in most cases, XL-Travel became their first choice.
+              Like that we have gained 150.000 visitors per month and growing.
+            </p>
+            <span class="read-more__text font-size-14">Read More</span>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in-up" class="feature w-31 mx-auto mt-5">
+        <div class="d-flex">
+          <div class="feature-icon bg-white d-flex justify-content-center align-items-center box-shadow rounded-md">
+            <img loading="lazy" src="./assets/images/icons/dollar-crossed.webp" />
+          </div>
+          <div class="feature-text ml-2 ml-md-4">
+            <h class="font-weight-500 text-capitalize">No additional fees for guests</h>
+            <p class="feature-text__para dark-gray text-capitalize pt-2 opacity-8 font-normal font-size-14 w-88">
+              We want to be fair to our hosts and guests and therefore we do
+              not charge any additional fees. That means that our hosts are
+              able to have the best prices on the internet and consequently
+              more reservations.
+            </p>
+            <span class="read-more__text font-size-14">Read More</span>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in-up" class="feature w-31 mx-auto mt-5">
+        <div class="d-flex">
+          <div class="feature-icon bg-white d-flex justify-content-center align-items-center box-shadow rounded-md">
+            <img loading="lazy" src="./assets/images/icons/two-hands.webp" />
+          </div>
+          <div class="feature-text ml-2 ml-md-4">
+            <h class="font-weight-500 text-capitalize">Bring true art of hosting to life
+            </h>
+            <p class="feature-text__para dark-gray text-capitalize pt-2 opacity-8 font-normal font-size-14 w-88">
+              XL-Travel platform is not just an ordinary platform but much
+              more. Every host has an opportunity to grow and make their
+              accommodations better with our blog, support and XL-Travel
+              community of other hosts.
+            </p>
+            <span class="read-more__text font-size-14">Read More</span>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in-up" class="feature w-31 mx-auto mt-5">
+        <div class="d-flex">
+          <div class="feature-icon bg-white d-flex justify-content-center align-items-center box-shadow rounded-md">
+            <img loading="lazy" src="./assets/images/icons/owner.png" />
+          </div>
+          <div class="feature-text ml-2 ml-md-4">
+            <h class="font-weight-500 text-capitalize">+20,000 hosts</h>
+            <p class="feature-text__para dark-gray text-capitalize pt-2 opacity-8 font-normal font-size-14 w-88">
+              With our excellent support, great prices and low costs our
+              wonderful community is growing day by day. XL-Travel attracts
+              hosts from all over the world and is becoming a leading website
+              where people are looking for their perfect accommodations for
+              holidays, business trips or more.
+            </p>
+            <span class="read-more__text font-size-14">Read More</span>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in-up" class="feature w-31 mx-auto mt-5">
+        <div class="d-flex">
+          <div class="feature-icon bg-white d-flex justify-content-center align-items-center box-shadow rounded-md">
+            <img loading="lazy" src="./assets/images/icons/three-homes.webp" />
+          </div>
+          <div class="feature-text ml-2 ml-md-4">
+            <h class="font-weight-500 text-capitalize">You can host anything/anywhere</h>
+            <p class="feature-text__para dark-gray text-capitalize pt-2 opacity-8 font-normal font-size-14 w-88">
+              The whole procedure of hosting is taking place on our platform
+              on the internet. That means that you can upload your real estate
+              to our website no matter where you are at that moment. Make
+              business with XL-Travel even if you are out of town. Be free and
+              enjoy our platform.
+            </p>
+            <span class="read-more__text font-size-14">Read More</span>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-in-up" class="feature w-31 mx-auto mt-5">
+        <div class="d-flex">
+          <div class="feature-icon bg-white d-flex justify-content-center align-items-center box-shadow rounded-md">
+            <img loading="lazy" src="./assets/images/icons/man-with-headphone.webp" />
+          </div>
+          <div class="feature-text ml-2 ml-md-4">
+            <h class="font-weight-500 text-capitalize">24/7 support</h>
+            <p class="feature-text__para dark-gray text-capitalize pt-2 opacity-8 font-normal font-size-14 w-88">
+              We know that every beginning is hard and therefore we
+              established a great support team that will help you with any
+              problem. Do you have a question? No problem, we are here for
+              you! Our support team works 24/7 and are ready to answer all
+              your questions and solve and difficulty.
+            </p>
+            <span class="read-more__text font-size-14">Read More</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features Section Ends -->
+
+  <!-- Listings Section Starts -->
+  <section class="listing-section overflow-hidden">
+    <div class="container-main listing-container d-flex justify-content-center align-items-center">
+      <div class="listing-container__items text-white position-relative">
+        <div class="vertical-line"></div>
+        <div class="listing-container__item">
+          <div class="listing-container__item-triangle--line"></div>
+          <div class="listing-container__item-triangle"></div>
+
+          <div class="listing-container__item-text">
+            <h5 data-aos="flip-up" data-aos-duration="1000" class="mb-2 mb-sm-4 font-size-20">
+              Fill In the blanks on your booking calendar as fast as possible
+            </h5>
+            <p data-aos="flip-up" data-aos-duration="1000" class="font-size-15 hidden">
+              XL-Travel platform reaches millions of travelers from more than
+              50 countries.We love to travel and therefore we understand
+              exactly what every guest needs for an unforgettable trip. This
+              is why we created a travel zone where guests can find everything
+              about your accommodation and it helps you bring more and more
+              guests to book your property every single day!
+            </p>
+          </div>
+        </div>
+
+        <div class="listing-container__item">
+          <div class="listing-container__item-triangle--line"></div>
+          <div class="listing-container__item-triangle"
+            style="transform: rotate(0) scale(1.3); background-color: #fec657"></div>
+          <div class="listing-container__item-text">
+            <h5 data-aos="flip-up" data-aos-duration="1000" class="mb-2 mb-sm-4 font-size-20 font-weight-500">
+              How much it will cost me?
+            </h5>
+            <p data-aos="flip-up" data-aos-duration="1000" class="font-size-15">
+              <span style="font-size: 19.5px">NOTHING AT ALL! &nbsp;</span>
+              No joke, really. Signing up is free, listing the property is
+              free, all the tools to help you manage your property are free.
+              Simply list your property, set the price you want to earn per
+              stay, then sit back, relax and watch the bookings fly in!
+            </p>
+          </div>
+        </div>
+
+        <div class="listing-container__item">
+          <div class="listing-container__item-triangle--line"></div>
+          <div class="listing-container__item-triangle"></div>
+          <div class="listing-container__item-text">
+            <h5 data-aos="flip-up" data-aos-duration="1000" class="mb-2 mb-sm-4 font-size-20 font-weight-500">
+              All you need in one place
+            </h5>
+            <p data-aos="flip-up" data-aos-duration="1000" class="font-size-15 hidden">
+              From presenting your property to the world, to direct
+              communication with your guests, managing bookings on your mobile
+              device, getting live support in multiple languages etc. All that
+              you can find on our XL-Travel platform.
+            </p>
+          </div>
+        </div>
+
+        <div class="listing-container__item">
+          <div class="listing-container__item-triangle"></div>
+          <div class="listing-container__item-text">
+            <h5 data-aos="flip-up" data-aos-duration="1000" class="mb-2 mb-sm-4 font-size-20 font-weight-500">
+              You are never alone & always trending
+            </h5>
+            <p data-aos="flip-up" data-aos-duration="1000" class="font-size-15 hidden">
+              The whole platform is designed exactly in a way to fulfill
+              everything that guests need for an unforgettable trip. Our team
+              has more than a decade of experience in tourism marketing and we
+              are total travel lovers.Team invests a lot in staff training and
+              development, so your property always stays one step ahead of the
+              competition. We will do our best to ensure your property finds
+              guests as soon as possible.We understand that every start is
+              hard, therefore we offer you 24/7 multi-language support!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Listings Section Ends -->
+
+  <!-- Accommodation Section Starts -->
+  <section class="accommodation-section overflow-hidden">
+    <div class="container-main accommodation-container d-flex justify-content-between">
+      <figure data-aos="zoom-in" data-aos-duration="1000" class="accommodation-container__image w-57 d-lg-block">
+        <img src="./assets/images/dots.png" alt="Dots" loading="lazy"
+          class="dots position-absolute top-down-animation" />
+        <img src="./assets/images/accommodation-image.png" alt="Drawing Room Decorated" loading="lazy" />
+      </figure>
+
+      <div data-aos="zoom-out" data-aos-duration="1000" class="accommodation-container__text p-3 p-md-3 p-xl-3">
+        <p>Fill Your Accommodation with sky rocket speed</p>
+        <h2 class="w-48 line-height-54 mt-3 mb-4 font-weight-500">
+          List Your Property In 4 Easy Steps
+        </h2>
+        <div class="accommodation-container__steps">
+          <div class="accommodation-container__step d-flex mb-4">
+            <figure class="bg-white p-2 d-flex justify-content-center align-items-center rounded-md">
+              <img src="./assets//images/icons/book.webp" alt="Book" loading="lazy" class="w-88 h-75" />
+            </figure>
+            <div class="accommodation-container__step-text">
+              <h4 class="font-size-17">Register On XL Travel as a Host</h4>
+              <p class="font-size-14">
+                Join our big family on XL-Travel platform! Our hosts come all
+                over the world and we are growing daily. Join the community
+                and let's make memories together!
+              </p>
+            </div>
+          </div>
+
+          <div class="accommodation-container__step d-flex mb-4">
+            <figure class="bg-white p-2 d-flex justify-content-center align-items-center rounded-md">
+              <img src="./assets//images/icons/arrows.webp" alt="Book" loading="lazy" class="w-88" />
+            </figure>
+            <div class="accommodation-container__step-text">
+              <h4 class="font-size-17">
+                Follow Easy Steps to setup your account & add property
+              </h4>
+              <p class="font-size-14">
+                We know that every beginning is hard and therefore we
+                developed the platform in a way that everyone can use easily
+                and with pleasure. We will lead you step by step to achieve
+                your goals!
+              </p>
+            </div>
+          </div>
+
+          <div class="accommodation-container__step d-flex mb-4">
+            <figure class="bg-white p-2 d-flex justify-content-center align-items-center rounded-md">
+              <img src="./assets//images/icons/home.webp" alt="Book" loading="lazy" class="w-88" />
+            </figure>
+            <div class="accommodation-container__step-text">
+              <h4 class="font-size-17">
+                Add property, set prices & Available dates
+              </h4>
+              <p class="font-size-14">
+                Adding property on XL-Travel is super easy. Our system is
+                leading you through the procedure step by step but if you have
+                any question, don't worry ,our support team is there for you
+                24/7.
+              </p>
+            </div>
+          </div>
+
+          <div class="accommodation-container__step d-flex">
+            <figure class="bg-white p-2 d-flex justify-content-center align-items-center rounded-md">
+              <img src="./assets//images/icons/play.webp" alt="Book" loading="lazy" class="w-88" />
+            </figure>
+            <div class="accommodation-container__step-text">
+              <h4 class="font-size-17">
+                See your listing go live in front of millions of travellers
+              </h4>
+              <p class="font-size-14">
+                We will take care of everything! Now is the time to sit back,
+                enjoy and watch how your business is growing !
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Accommodation Section Ends -->
+
+  <!-- -------- Options Section Starts ------------ -->
+  <section class="pt-2 pt-sm-4 overflow-hidden">
+    <div class="container-main">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <button
+          class="options-btn yellow-button d-flex flex-column justify-content-center align-items-center text-white px-sm-4 top-down-animation">
+          <p class="font-size-25 font-weight-600">
+            LIST YOUR PROPERTY
+            <span class="d-block d-sm-inline">FOR FREE NOW</span>
+          </p>
+          <p class="font-size-14">
+            Be Quick ! FREE Spot Are Almost Gone For May
+          </p>
+        </button>
+        <div class="d-flex align-items-center pt-3">
+          <div class="d-flex align-items-center">
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+          </div>
+          <p class="rating-text font-size-14 mr-2 ml-3">
+            4.6 stars out of 412 reviews
+          </p>
+          <img src="./assets/images/icons/blue-verified.png" alt="verified" width="30" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="text-center py-5 px-2">
+        <h2 class="font-weight-500" style="color: #14395b">
+          Not sure this is the best option for you?
+        </h2>
+        <p class="font-size-21 font-weight-500 mt-3 mt-sm-0" style="color: #14395b">
+          No Problem, let me show you some more
+        </p>
+      </div>
+
+      <div class="options-zigzag__text d-flex justify-content-center">
+        <figure>
+          <p data-aos="flip-right" data-aos-duration="1000" class="font-weight-500 position-absolute font-size-22">
+            We know growing a business is hard and a lot of things trends
+            changes overnight , but we can make it a whole lot easier,
+            quicker, more predictable, less stressful and fun.
+          </p>
+          <img src="./assets/images/zig-zag-2.svg" alt="ZigZag" loading="lazy" class="w-100 h-100" data-aos="fade-in"
+            data-aos-duration="3000" />
+          <p data-aos="flip-left" data-aos-duration="1500" class="font-weight-500 position-absolute font-size-22">
+            Let me present you next holy grail for travel business front of
+            you is game changer in this industry
+          </p>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- -------- Options Section Ends ------------ -->
+
+  <!-- -------- Banner Section Starts ------------ -->
+  <section class="banner-section position-relative overflow-hidden">
+    <div class="container-main banner-container d-flex flex-column align-items-center pt-5 pb-md-5">
+      <div class="position-relative text-white text-center">
+        <p data-aos="zoom-in-down" data-aos-duration="1000" class="banner-container__heading font-weight-600 py-sm-5">
+          A Sexy Well-Dress Super-Powered Sales Person That Works 24 Hours Per
+          Day, 7-Days Per Week, 365 Days A Year
+        </p>
+        <div class="position-relative">
+          <div class="banner-image__text" id="laptop-text">
+            <p class="laptop-text font-size-35 text-uppercase font-weight-600" id="laptop-text1">
+              <span>Fill Your Accommodation with</span>
+              Fill Your Accommodation with
+            </p>
+
+            <p class="laptop-text font-size-35 text-uppercase font-weight-600" id="laptop-text2">
+              <span>Sky Rocket Speed</span>
+              Sky Rocket Speed
+            </p>
+
+            <p class="font-size-35 text-uppercase font-weight-600"></p>
+            <p data-aos="flip-down" data-aos-duration="2500" id="laptop-text3">
+              With the most effective platform for rapidly scaling business on
+              the planet
+            </p>
+          </div>
+          <figure data-aos="zoom-in-up" data-aos-duration="1000" class="banner-laptop w-70 mx-auto py-5">
+            <img src="./assets/images/banner-image.svg" alt="Banner" loading="lazy" class="w-100 h-100" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="banner-container__text d-flex justify-content-center">
+        <div data-aos="zoom-in-left" data-aos-duration="1000">
+          <p class="font-weight-600 font-size-21" style="color: #fec657; letter-spacing: 2px">
+            And never calls in sick or takes holidays… or never goes to work
+            for a competitor.
+          </p>
+
+          <h5 class="font-weight-600 my-3 text-uppercase font-size-19" style="color: #40d0d3">
+            This person goes by….
+          </h5>
+          <p class="list-item text-white text-uppercase font-weight-500 font-size-19">
+            <span><b></b></span> first name: &nbsp;
+            <strong style="color: #40d0d3">XL</strong>
+          </p>
+          <p class="list-item text-uppercase text-white font-weight-500 font-size-19">
+            <span><b></b></span> last name: &nbsp;
+            <strong style="color: #40d0d3">Travel</strong>
+          </p>
+          <p style="color: #fff" class="mt-3 line-height-28 font-size-19">
+            Yep, a good ol’ high-converting Travel platforms for short term
+            rentals is like a sexy well-dressed super-powered salesperson.
+            And, if you set it up right the first time around, it will work
+            for you day and night to bring new guests!
+          </p>
+
+          <figure class="banner-arrow mx-auto my-5 top-down-animation">
+            <img src="./assets/images/down-arrow.webp" alt="Arrow pointing downwards" loading="lazy"
+              class="w-100 h-100" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+        <button
+          class="banner-btn yellow-button d-flex flex-column justify-content-center align-items-center text-white px-sm-4 top-down-animation">
+          <p class="font-size-21 font-weight-600">
+            LIST YOUR PROPERTY
+            <span class="d-block d-sm-inline">FOR FREE NOW</span>
+          </p>
+          <p class="font-size-14">
+            Be Quick ! FREE Spot Are Almost Gone For May
+          </p>
+        </button>
+        <div class="d-flex align-items-center pt-3">
+          <div class="d-flex align-items-center">
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+          </div>
+          <p class="rating-text font-size-14 mr-2 ml-3" style="color: #fff">
+            4.6 stars out of 412 reviews
+          </p>
+          <img src="./assets/images/icons/blue-verified.png" alt="verified" width="30" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------- Banner Section Ends ------------ -->
+
+  <!-- --------- More About Section -->
+  <section class="pt-0 py-md-5 overflow-hidden">
+    <div class="">
+      <h2 class="more-section__title color-blue font-weight-600 font-size-45 text-center text-capitalize my-0 my-md-5"
+        style="padding-top: 80px; padding-bottom: 80px; color: #14395b">
+        More about XL-TRAVEL
+      </h2>
+
+      <div class="more-container">
+        <div class="more-container__box d-lg-flex justify-content-between">
+          <div data-aos="fade-right" data-aos-duration="1500" class="more-container__text w-47">
+            <h2 class="text-uppercase font-weight-500 color-tealish pb-2">
+              Team
+            </h2>
+            <h5 class="text-capitalize font-size-19 font-weight-300">
+              your booking partner
+            </h5>
+            <div class="font-size-19 more-container__text--paras mb-5 mb-lg-0">
+              <p class="font-weight-300 line-height-29">
+                XL-TRAVEL consists of a creative team from several countries,
+                with high goals, wish for constant improvements, the passion
+                for delivering only the best and thus we provide a fantastic
+                user experience and an unforgettable and carefree vacation.
+              </p>
+              <p class="font-weight-300 line-height-29">
+                All members of the team have a great passion for traveling and
+                this is why we are the leaders in the number of successful
+                reservations per click.
+              </p>
+              <p class="font-weight-300 line-height-29">
+                Over the years, we have traveled a lot in search of practical
+                solutions and have tried all kinds of accommodations. That
+                helped us get a crystal clear picture of what the guest needs
+                to make the trip memorable and will be returning again and
+                again and again.
+              </p>
+              <p class="font-weight-300 line-height-29">
+                The team invests a lot of its time in education and
+                improvment, which we believe is the reason for stable and
+                constant growth.
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" data-aos-duration="1500" class="more-container__img w-47 position-relative">
+            <div class="more-container__img-gradient"></div>
+            <figure class="position-absolute">
+              <img src="./assets/images/staff-meeting.webp" alt="4 people having meeting on office table"
+                loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="more-container__box d-lg-flex flex-row-reverse justify-content-between">
+          <div data-aos="fade-left" data-aos-duration="1500" class="more-container__text w-47 mb-5 mb-lg-0">
+            <h2 class="text-uppercase font-weight-500 color-tealish pb-2">
+              MARKETING
+            </h2>
+            <h5 class="text-capitalize font-size-19">
+              we are everywher is possible
+            </h5>
+            <div class="more-container__text--para font-size-19 mr-lg-5">
+              <p class="font-weight-300 line-height-29">
+                We know how important it is to attract attention in this quick
+                world full of information and to be visible.As many as 70% of
+                the team works in the marketing department which means that
+                every property is promoted professionally and we make sure the
+                property is found in the shortest possible time.
+              </p>
+              <p class="font-weight-500">
+                We make sure the property is visible everywhere:
+              </p>
+              <ul class="more-container__social-icons pt-3">
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/facebook.png" alt="facebook" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">Facebook</span>
+                </li>
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/tik-tok.png" alt="tiktok" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">TikTok</span>
+                </li>
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/google-blue.png" alt="google" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">Google</span>
+                </li>
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/instagram.png" alt="instagram" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">Instagram</span>
+                </li>
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/youtube.png" alt="youtube" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">Youtube</span>
+                </li>
+              </ul>
+
+              <ul class="more-container__social-icons">
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/email.png" alt="email" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">Email</span>
+                </li>
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/sms.png" alt="sms" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">SMS</span>
+                </li>
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/content.png" alt="content" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">Content</span>
+                </li>
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/seo-1.png" alt="seo" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">SEO</span>
+                </li>
+                <li class="more-container__social-icon">
+                  <a href="" data-aos="fade-down" data-aos-duration="1500">
+                    <img loading="lazy" style="height: 36px" class="social-media-icon"
+                      src="./assets/images/icons/influencer.png" alt="influencer" />
+                  </a>
+                  <span data-aos="fade-up" data-aos-duration="1500" class="d-block font-size-14">Influencer</span>
+                </li>
+              </ul>
+              <p class="font-weight-300 line-height-29">
+                Our marketing team creates marketing campaigns strategically,
+                with strong sales messages and creative advertising that
+                increases performance.
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-right" data-aos-duration="1500" class="more-container__img w-47 position-relative">
+            <div class="more-container__img-gradient" style="
+                  transform: rotateY(180deg);
+                  margin-left: 0;
+                  background-image: linear-gradient(
+                    to bottom left,
+                    #3dc7ad #1db3e1
+                  );
+                "></div>
+            <figure class="position-absolute" style="left: 25%">
+              <img src="./assets/images/playing-game.webp" alt="4 people having meeting on office table"
+                loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="more-container__box d-lg-flex justify-content-between">
+          <div data-aos="fade-right" data-aos-duration="1500" class="more-container__text w-47 mb-sm-0 mb-5">
+            <h2 class="text-uppercase font-weight-500 color-tealish pb-2">
+              24/7 support.
+            </h2>
+            <h5 class="text-capitalize font-size-19">
+              We are ALWAYS here for you!
+            </h5>
+            <div class="more-container__text--paras font-size-19 mb-5 mb-lg-0">
+              <h5 class="text-capitalize font-size-19">
+                do you have a question? no problem, our support team is here
+                to help you!
+              </h5>
+              <p class="font-weight-300 line-height-29">
+                We know how hard it is, especially at the beginning when you
+                embark on something new. That is why we have made sure that
+                you have someone who can guide you step by step through the
+                procedures and answer all your possible questions.As a
+                partner, you are assigned a business administrator who will be
+                available for all the questions and will lead you to
+                success.We also thought of the guests:
+              </p>
+              <p class="font-weight-300 line-height-29">
+                When choosing a property, guests have access to virtual travel
+                assistants, who help with the choice of accommodation as well
+                as destinations.As a global platform, we have ensured that
+                there is support in more than 14 languages. Our travel
+                assistants must go through several tests, thus ensuring that
+                they really master this industry and also sales. This helps
+                the guest to decide about renting a place faster and also more
+                to his liking. Only like that the guest is satisfied and will
+                give you a good rating, which will help you  achieve higher
+                rank in search engines.
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" data-aos-duration="1500" class="more-container__img w-47 position-relative">
+            <div class="more-container__img-gradient position-relative"></div>
+            <figure class="position-absolute">
+              <img src="./assets/images/person-pointing-fingre.webp" alt="4 people having meeting on office table"
+                loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="more-container__box d-lg-flex flex-row-reverse justify-content-between">
+          <div data-aos="fade-left" data-aos-duration="1500" class="more-container__text w-47 mb-5 mb-lg-0">
+            <h2 class="text-uppercase font-weight-500 color-tealish pb-2">
+              WIN WIN
+            </h2>
+            <h5 class="text-capitalize font-size-19">
+              More for you and your guests’ MONEY
+            </h5>
+            <div class="more-container__text--paras font-size-19 mr-lg-5">
+              <p class="font-weight-300 line-height-29">
+                Other online platforms and travel agencies have very high
+                commissions, so you are all forced to raise prices due to
+                earnings
+              </p>
+              <p class="font-weight-300 line-height-29">
+                In most cases, we see a rise in prices somewhere between
+                15-40%, which leads to high and uncompetitive prices. High
+                prices deter guests or reduce the length of their stay.
+                Shorter deadlines have more people spend more money on
+                cleaning and maintenance and thus increase work to reduce
+                profits
+              </p>
+              <p class="font-weight-300 line-height-29">
+                When we built the platform, we wanted to create a coexisting
+                system or a WIN-WIN system that pays compliments and on the
+                one hand brings an unforgettable vacation at top prices with
+                full accommodation and satisfaction of the owners. That’s why
+                at XL travel, we have no commissions for anyone. Not for you,
+                not for the guests!
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-right" data-aos-duration="1500" class="more-container__img w-47 position-relative">
+            <div class="more-container__img-gradient" style="
+                  transform: rotateY(180deg);
+                  margin-left: 0;
+                  background-image: linear-gradient(
+                    to bottom left,
+                    #3dc7ad #1db3e1
+                  );
+                "></div>
+            <figure class="position-absolute" style="left: 25%">
+              <img src="./assets/images/win-win-banner.webp" alt="4 people having meeting on office table"
+                loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="more-container__box d-lg-flex justify-content-between">
+          <div data-aos="fade-right" data-aos-duration="1500" class="more-container__text w-47">
+            <h2 class="text-uppercase font-weight-500 color-tealish pb-2">
+              CONTROL OF RESERVATIONS
+            </h2>
+            <h5 class="text-capitalize font-size-19">
+              You are boss of your business
+            </h5>
+            <div class="more-container__text--paras font-size-19">
+              <p class="font-weight-300 line-height-29">
+                It should also be pointed out that you always have 100%
+                control you’re your reservations.
+              </p>
+              <p class="font-weight-300 line-height-29">
+                You only rent to whoever you want, when you want and at the
+                prices you want.
+              </p>
+              <p class="font-weight-300 line-height-29">
+                Communication and payments are made directly between you and
+                the guests. Easy, Fast and easy. You determine everything!
+              </p>
+              <p class="font-weight-300 line-height-29">
+                The Price per night, when you want to rent or when not. You
+                can also refuse if the person does not respond to you. As soon
+                as the guest submits an inquiry, you are in direct
+                conversation with the guest and can agree on the terms that
+                suit you!
+              </p>
+            </div>
+            <button class="read-more-btn invisible yellow-button text-white px-4 mt-3">
+              Read More
+            </button>
+          </div>
+
+          <div data-aos="fade-left" data-aos-duration="1500" class="more-container__img w-47 position-relative">
+            <div class="more-container__img-gradient position-relative"></div>
+            <figure class="position-absolute">
+              <img src="./assets/images/guest-table.webp" alt="4 people having meeting on office table"
+                loading="lazy" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="more-container__box d-lg-flex flex-row-reverse justify-content-between">
+          <div data-aos="fade-left" data-aos-duration="1500" class="more-container__text w-47">
+            <h2 class="text-uppercase font-weight-500 color-tealish pb-2">
+              HOST ZONE
+            </h2>
+            <h5 class="text-capitalize font-size-19">your virtual office!</h5>
+            <div class="more-container__text--paras font-size-19 mr-lg-5">
+              <p class="font-weight-300 line-height-29 mt-4">
+                We designed a special web office - a host zone, from which you
+                can control everything.In real time you can see who makes
+                reservations and when.
+              </p>
+              <p class="my-2 line-height-29">
+                Then when they check in, check out, how much you make per stay
+                and also edit everything with just a few simple clicks.
+              </p>
+              <p>
+                You can watch how your business grows day by day easily from
+                your phone.
+              </p>
+            </div>
+            <button class="read-more-btn invisible yellow-button text-white px-4 mt-3">
+              Read More
+            </button>
+          </div>
+
+          <div data-aos="fade-right" data-aos-duration="1500" class="more-container__img w-47 position-relative">
+            <div class="more-container__img-gradient" style="
+                  transform: rotateY(180deg);
+                  margin-left: 0;
+                  background-image: linear-gradient(
+                    to bottom left,
+                    #3dc7ad #1db3e1
+                  );
+                "></div>
+            <figure class="position-absolute" style="left: 25%">
+              <img src="./assets/images/dashboard.webp" alt="4 people having meeting on office table" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div data-aos="zoom-out" data-aos-duration="1500" class="container-main more-more__options d-flex"
+    style="transform: scale(1.1)">
+    <div class="d-flex flex-column">
+      <h3 class="font-weight-600 text-center" style="color: #14395b">
+        And Much Much More….
+      </h3>
+      <p class="font-weight-600 text-center pt-4 pb-3 text-capitalize font-size-22"
+        style="color: #40d0d3; letter-spacing: 1px">
+        So, I really do not understand why you still reading this?
+      </p>
+
+      <div class="options-zigzag__text d-flex justify-content-center mt-5">
+        <figure>
+          <p data-aos="flip-right" data-aos-duration="1000" class="font-weight-500 position-absolute font-size-22 mt-2">
+            In this time, you have spent reading this you would have your
+            property already in front of potential guests and perhaps get
+            reservations.
+          </p>
+          <img src="./assets/images/zig-zag-2.svg" alt="ZigZag" loading="lazy" class="w-100 h-100" data-aos="fade-in"
+            data-aos-duration="3000" />
+          <p data-aos="flip-left" data-aos-duration="1500" class="u-mb font-weight-500 position-absolute font-size-22">
+            So not to waste any time, use this limited time offer to join and
+            Fill in the blanks on your booking calendar
+            <span class="text-capitalize d-lg-block text-center" style="color: #40d0d3">right now !</span>
+          </p>
+        </figure>
+      </div>
+
+      <div class="font-weight-500 py-4 text-center" style="color: #14395b">
+        <h3>What do you lose? NOTHING! It is 100% FREE!</h3>
+        <p class="text-center mt-3">
+          Hit the button below and show your property to the world now
+        </p>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center mb-3">
+        <button
+          class="more-options__btn yellow-button d-flex flex-column justify-content-center align-items-center text-white px-2 px-sm-4 top-down-animation">
+          <p class="font-size-21 font-weight: 600">
+            LIST YOUR PROPERTY
+            <span class="d-block d-sm-inline">FOR FREE NOW</span>
+          </p>
+          <p class="font-size-12">
+            Be Quick ! FREE Spot Are Almost Gone For May
+          </p>
+        </button>
+        <div class="d-flex align-items-center pt-3">
+          <div class="d-flex align-items-center">
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+            <img style="width: 16px" class="mr-1" src="./assets/images/icons/yellowStar-Two.png" alt="star"
+              loading="lazy" />
+          </div>
+          <p class="rating-text font-size-13 mr-1 mr-sm-2 ml-1 ml-sm-3">
+            4.6 stars out of 412 reviews
+          </p>
+          <img src="./assets/images/icons/blue-verified.png" alt="verified" width="30" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----------- More About Section Ends -->
+
+  <!-- Frequently Asked Question -->
+  <section class="frequently-asked-question pt-5 overflow-hidden">
+    <div class="container-main mx-auto pb-0 w-95">
+      <div class="d-flex flex-column align-items-center pt-3 pb-4 px-3 px-lg-0">
+        <p class="color-blue font-weight-500 font-size-28 text-center text-capitalize">
+          Frequently Asked Questions
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="flex flex-column faq-section">
+            <div class="row">
+              <div class="col-lg-12 px-0">
+                <div id="accordion">
+                  <div data-aos="flip-up" data-aos-duration="900" class="card border-accordian">
+                    <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true"
+                      aria-controls="collapse-1">
+                      <div class="card-header" id="heading-1">
+                        <h6 class="mb-0 faq-heading">
+                          What the First Step of the Dream Apartment buying
+                          process ?
+                        </h6>
+                      </div>
+                      <div id="collapse-1" class="collapse show" data-parent="#accordion" aria-labelledby="heading-1">
+                        <div class="card-body accordian-description">
+                          First, you need to know how much you can borrow,
+                          knowing how much home you can afford narrows down
+                          online apartment searching to suitable Properties ,
+                          thus no time is Wasted considering apartment that
+                          are not within your dream and budget.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div data-aos="flip-down" data-aos-duration="900" class="card border-accordian mt-4">
+                    <a role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false"
+                      aria-controls="collapse-2">
+                      <h6>How Long does It take to buy Apartment ?</h6>
+                      <div class="card-header" id="heading-1"></div>
+                      <div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+                        <div class="card-body accordian-description">
+                          First, you need to know how much you can borrow,
+                          knowing how much home you can afford narrows down
+                          online apartment searching to suitable Properties ,
+                          thus no time is Wasted considering apartment that
+                          are not within your dream and budget.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div data-aos="flip-up" data-aos-duration="900" class="card border-accordian mt-4">
+                    <a role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false"
+                      aria-controls="collapse-3">
+                      <h6>How much do I need for a down payment ?</h6>
+                      <div id="collapse-3" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+                        <div class="card-body accordian-description">
+                          First, you need to know how much you can borrow,
+                          knowing how much home you can afford narrows down
+                          online apartment searching to suitable Properties ,
+                          thus no time is Wasted considering apartment that
+                          are not within your dream and budget.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div data-aos="flip-down" data-aos-duration="900" class="card border-accordian mt-4">
+                    <a role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false"
+                      aria-controls="collapse-4">
+                      <h6>What is a buyer's market ?</h6>
+                      <div id="collapse-4" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+                        <div class="card-body accordian-description">
+                          First, you need to know how much you can borrow,
+                          knowing how much home you can afford narrows down
+                          online apartment searching to suitable Properties ,
+                          thus no time is Wasted considering apartment that
+                          are not within your dream and budget.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div data-aos="flip-up" data-aos-duration="900" class="card border-accordian mt-4">
+                    <a role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="false"
+                      aria-controls="collapse-5">
+                      <h6>What is popular in Apartment ?</h6>
+                      <div id="collapse-5" class="collapse" data-parent="#accordion" aria-labelledby="heading-1">
+                        <div class="card-body accordian-description">
+                          First, you need to know how much you can borrow,
+                          knowing how much home you can afford narrows down
+                          online apartment searching to suitable Properties ,
+                          thus no time is Wasted considering apartment that
+                          are not within your dream and budget.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ------------------ FAQ's Section Ends ---------------- -->
+
+  <!-- Footer -->
+  <footer class="footer background-color-gray-three mt-5 overflow-hidden">
+    <div data-aos="flip-up" data-aos-duration="400"
+      class="footer-inner container-main mx-auto d-flex flex-column flex-lg-row w-95">
+      <div class="footer-single logo-side w-26">
+        <div class="cursor-pointer">
+          <a href="/">
+            <img loading="lazy" style="height: 122px" src="./assets/images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="ml-1">
+          <p class="text-white font-size-12 pt-4 font-weight-200">
+            XL Travel OU
+          </p>
+          <p class="text-white font-size-12 pt-2 font-weight-200">
+            Address: Sepapaja 6, Tallinn 1551, Estonia
+          </p>
+          <p class="text-white font-size-12 pt-2 font-weight-200">
+            Registry code: 16346723
+          </p>
+        </div>
+        <div class="pt-4">
+          <img loading="lazy" style="height: 36px; margin-right: 10px" class="social-media-icon"
+            src="./assets/images/icons/facebook.png" alt="facebook" />
+          <img loading="lazy" style="height: 36px; margin-right: 10px" class="social-media-icon"
+            src="./assets/images/icons/twitter.png" alt="facebook" />
+          <img loading="lazy" style="height: 36px; margin-right: 10px" class="social-media-icon"
+            src="./assets/images/icons/google-blue.png" alt="facebook" />
+          <img loading="lazy" style="height: 36px" class="social-media-icon" src="./assets/images/icons/instagram.png"
+            alt="facebook" />
+        </div>
+      </div>
+      <div class="list-inner w-42 d-flex flex-column flex-lg-row justify-content-between">
+        <div class="footer-single footer-links w-31 pt-5">
+          <ul class="text-white" style="list-style-type: '-'">
+            <p class="footer-link-headings font-weight-normal font-size-13">
+              About Us
+            </p>
+            <div class="footer-border-line"></div>
+            <li><a>What Is Xl Travel</a></li>
+            <li><a>Careers</a></li>
+            <li><a>Press</a></li>
+            <li><a>Travel Zone</a></li>
+          </ul>
+        </div>
+        <div style="border-bottom: 1.5px solid #1a8f91" class="d-block d-lg-none"></div>
+        <div class="footer-single footer-links w-31 pt-5">
+          <ul class="text-white" style="list-style-type: '-'">
+            <p class="footer-link-headings font-weight-normal font-size-13">
+              Help
+            </p>
+            <div class="footer-border-line"></div>
+            <li><a>Help Center</a></li>
+            <li><a>FAQs</a></li>
+            <li><a>Privacy Policy</a></li>
+            <li><a>Cookie Policy</a></li>
+            <li><a>Terms Of Use</a></li>
+          </ul>
+        </div>
+        <div style="border-bottom: 1.5px solid #1a8f91" class="d-block d-lg-none"></div>
+        <div class="footer-single footer-links w-31 pt-5">
+          <ul class="text-white" style="list-style-type: '-'">
+            <p class="footer-link-headings font-weight-normal font-size-13">
+              Partner with us
+            </p>
+            <div class="footer-border-line"></div>
+            <li><a>Partner Hub</a></li>
+            <li><a>Advertise On XL Travel</a></li>
+            <li><a>Affiliate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-single footer-links pt-5">
+        <div class="d-flex justify-content-center">
+          <div class="position-relative mr-4">
+            <img loading="lazy" style="height: 119px" src="./assets/images/icons/google-rating-badge.png"
+              alt="google-badge" />
+            <div style="top: 59px; left: 0; right: 0" class="d-flex flex-column align-items-center position-absolute">
+              <p style="color: #ee453e; line-height: 10px" class="font-size-18 font-weight-500">
+                4.7
+              </p>
+              <div>
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+              </div>
+            </div>
+          </div>
+          <div class="position-relative mr-4">
+            <img loading="lazy" style="height: 119px" src="./assets/images/icons/facebook-rating-badge.png"
+              alt="facebook-badge" />
+            <div style="top: 59px; left: 0; right: 0" class="d-flex flex-column align-items-center position-absolute">
+              <p style="color: #3b559f; line-height: 10px" class="font-size-18 font-weight-500">
+                4.7
+              </p>
+              <div>
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img loading="lazy" style="height: 119px" src="./assets/images/icons/award-badge.png" alt="award-badge" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-main mx-auto">
+      <p class="text-center text-white font-weight-400 py-4 py-lg-5 font-size-14">
+        Copyright © 2022 Xl Travel. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- Footer Ends-->
+  <!-- SIGNUP/LOGIN FORM -->
+  <section class="login_signup" id="login_signup-form">
+    <div class="login-signup_container">
+      <div class="form_container">
+        <div class="form_text d-none d-sm-block">
+          <p>
+            “ What is there more kindly the feelings between host & guest ?
+          </p>
+          <div class="form_date">
+            <p id="form_date">23/4/2022</p>
+            <p id="form_day">Friday</p>
+          </div>
+        </div>
+
+        <form class="login-signup_form">
+          <img src="./assets/images/logo.png" alt="logo" loading="lazy" />
+          <h5 id="login-signup_form-heading">Sign In</h5>
+
+          <div class="form_input-group d-none" id="first_name">
+            <label>First Name</label>
+            <input type="text" placeholder="John" required />
+          </div>
+
+          <div class="form_input-group d-none" id="last_name">
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe" required />
+          </div>
+
+          <div class="form_input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Mymail@gmail.com" required />
+          </div>
+
+          <div class="form_input-group" id="login_password">
+            <label>Password</label>
+            <input type="password" placeholder="*********" required />
+          </div>
+
+          <a href="./become-host.html" class="w-100">
+            <button class="form_btn" type="button" id="form_btn">
+              Sign In
+            </button>
+          </a>
+
+          <div class="form_links" id="form_links">
+            <span class="form_link-one" id="create-account_link">Create Account</span>
+            <span class="form_link-two" id="forget-password_link">Forget Password?</span>
+          </div>
+
+          <div class="social-login_links" id="social-login_links">
+            <p id="social-login_title">Or Sign in With</p>
+            <div class="social_login-btns">
+              <button type="button">
+                <img src="./assets/images/icons/facebookBlue.png" alt="facebook" loading="lazy" />
+                Facebook
+              </button>
+              <button type="button">
+                <img src="./assets/images/icons/google-icon.png" alt="facebook" loading="lazy" />
+                Google
+              </button>
+            </div>
+          </div>
+
+          <div class="form_line d-none" id="form_line"></div>
+
+          <p class="already_sign-btn d-none font-size-14 mt-3 border w-100 rounded-md text-center p-2 cursor-pointer"
+            id="already_sign-btn">
+            Already have account? Sign In
+          </p>
+
+          <p class="font-size-11 mt-3" id="login-policy">
+            By signing in, I agree to Xl Travel
+            <a href="">Terms of Use</a> and
+            <a href="">GDPR.EU</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="login-form" class="logIn-signUp login w-100">
+      <form class="login container-main mx-auto" style="transform: scale(0.8)">
+        <div
+          id="login-form-inner"
+          class="login-inner bg-white w-39 mx-auto py-2"
+        >
+          <div class="d-flex flex-column align-items-center w-100 px-4">
+            <div class="d-flex justify-content-center pb-4">
+              <img
+                style="width: 70px"
+                src="./assets/images/logo.png"
+                alt="logo"
+              />
+            </div>
+            <h class="font-size-18 font-weight-500 text-center text-dark pb-5"
+              >Sign In</h
+            >
+            <div class="text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >Email</label
+              >
+              <input type="email" required placeholder="mymail@mail.com" />
+            </div>
+            <div class="password text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >Password</label
+              >
+              <input type="password" required placeholder="********" />
+            </div>
+            <div class="w-100 pb-4">
+              <a href="./become-host.html">
+                <button
+                  style="padding: 11px 0px"
+                  type="button"
+                  class="yellow-button w-100 font-size-16 font-weight-500"
+                >
+                  Sign In
+                </button>
+              </a>
+            </div>
+            <div class="w-100 d-flex justify-content-between pb-3">
+              <div>
+                <p
+                  class="color-tealish font-weight-400 font-size-16 cursor-pointer"
+                  onclick="displayBlock(`signup-form`) , displayNone(`login-form`)"
+                >
+                  Create account
+                </p>
+              </div>
+              <div>
+                <p
+                  class="color-tealish font-weight-400 font-size-16 cursor-pointer"
+                >
+                  Forget Password ?
+                </p>
+              </div>
+            </div>
+            <div class="d-flex w-100 align-items-center pb-4">
+              <span class="border-bottom-gray w-29"></span>
+              <p class="color-gray-two font-size-16 mx-2 mx-lg-4">
+                Or Sign In With
+              </p>
+              <span class="border-bottom-gray w-29"></span>
+            </div>
+            <div
+              class="w-100 d-flex justify-content-between align-items-center pb-3"
+            >
+              <button
+                class="form-button-bottom d-flex align-items-center justify-content-center font-weight-500 font-size-16"
+              >
+                <img
+                  style="width: 30px"
+                  class="mr-4"
+                  src="./assets/images/icons/facebookBlue.png"
+                  alt="facebook"
+                />
+                Facebook
+              </button>
+              <button
+                class="form-button-bottom d-flex align-items-center justify-content-center font-weight-500 font-size-16"
+              >
+                <img
+                  style="width: 30px"
+                  class="mr-4"
+                  src="./assets/images/icons/google-icon.png"
+                  alt="facebook"
+                />
+                Google
+              </button>
+            </div>
+            <div class="w-100">
+              <p class="font-size-11 text-center">
+                By signing in, I agree to Xl Travel
+                <span class="color-tealish underline-text"
+                  ><u>Terms of Use</u></span
+                >
+                and
+                <span class="color-tealish underline-text"><u>GDPR.EU</u></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section> -->
+
+  <!-- Signup Form -->
+  <!-- <section id="signup-form" class="logIn-signUp signup w-100">
+      <form class="login container-main mx-auto" style="transform: scale(0.8)">
+        <div
+          id="signup-form-inner"
+          class="signup-inner bg-white w-39 mx-auto py-2"
+        >
+          <div class="d-flex flex-column align-items-center w-100 px-4">
+            <div class="d-flex justify-content-center pb-2">
+              <img
+                style="width: 70px"
+                src="./assets/images/logo.png"
+                alt="logo"
+              />
+            </div>
+            <h class="font-size-18 font-weight-500 text-center text-dark pb-5"
+              >Sign Up</h
+            >
+            <div class="text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >First Name</label
+              >
+              <input type="text" required placeholder="John" />
+            </div>
+            <div class="text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >Last Name</label
+              >
+              <input type="text" required placeholder="Doe" />
+            </div>
+            <div class="text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >Email</label
+              >
+              <input type="email" required placeholder="Mymail@mail.com" />
+            </div>
+            <div class="w-100 pb-4">
+              <a href="./become-host.html">
+                <button
+                  style="padding: 11px 0px"
+                  type="button"
+                  class="yellow-button w-100 font-size-16 font-weight-500"
+                >
+                  Sign Up
+                </button>
+              </a>
+            </div>
+            <div class="d-flex w-100 align-items-center pb-4">
+              <span class="border-bottom-gray w-29"></span>
+              <p class="color-gray-two font-size-16 mx-2 mx-lg-4">
+                Or Sign Up With
+              </p>
+              <span class="border-bottom-gray w-29"></span>
+            </div>
+            <div
+              class="w-100 d-flex justify-content-between align-items-center pb-4"
+            >
+              <button
+                class="form-button-bottom d-flex align-items-center justify-content-center font-weight-500 font-size-16"
+              >
+                <img
+                  style="width: 30px"
+                  class="mr-4"
+                  src="./assets/images/icons/facebookBlue.png"
+                  alt="facebook"
+                />
+                Facebook
+              </button>
+              <button
+                class="form-button-bottom d-flex align-items-center justify-content-center font-weight-500 font-size-16"
+              >
+                <img
+                  style="width: 30px"
+                  class="mr-4"
+                  src="./assets/images/icons/google-icon.png"
+                  alt="facebook"
+                />
+                Google
+              </button>
+            </div>
+            <div class="w-100 pb-4">
+              <div class="border-bottom-gray w-100"></div>
+            </div>
+            <div class="w-100">
+              <button
+                class="form-button-bottom w-100 py-2 d-flex align-items-center justify-content-center font-weight-500 font-size-16 opacity-6"
+                onclick="displayNone(`signup-form`) , displayBlock(`login-form`)"
+              >
+                Already have account? Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section> -->
+  <script src="./utils/commonFunctions.js"></script>
+  <script src="./utils/listYourProperty.js"></script>
+</body>
+
+</html>

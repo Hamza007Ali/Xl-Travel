@@ -1,0 +1,309 @@
+.border-bottom-2 {
+  opacity: 0.3;
+  border-bottom: 2px solid;
+  border-color: rgba(132, 130, 128, 0.4);
+}
+
+header .header-toggle-button {
+  background-color: transparent;
+  outline: none;
+  padding: 0px;
+}
+header .dropdown-toggle::after {
+  color: gray;
+}
+header .dropdown-menu {
+  top: 11px !important;
+}
+.become-host-main input {
+  background-color: #efefef;
+  border: 1px solid;
+  border-color: transparent;
+  outline: none;
+  border-radius: 9px;
+  padding: 8px 11px;
+}
+.become-host-main input:focus {
+  border-color: #3dc7ad;
+}
+.become-host-main ::placeholder {
+  font-size: 13px;
+  opacity: 0.9;
+  text-align: left;
+  padding-left: 12px;
+  color: black;
+}
+
+.become-host-main select {
+  background-color: #efefef;
+  border-radius: 9px;
+  padding: 0px 23px;
+  font-size: 13px;
+  border: none;
+  height: 43px;
+}
+.become-host-main .dropdown-date-month-year {
+  min-height: 200px;
+  overflow-y: scroll;
+}
+.become-host-main .verify-button {
+  background-color: transparent;
+  border: 2px solid #40d0d3;
+  border-radius: 9px;
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #40d0d3;
+  transition: transform 0.2s;
+}
+.become-host-main .verify-button:hover {
+  transform: scale(1.07);
+}
+.become-host-location textarea {
+  background-color: #efefef;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 9px;
+}
+.become-host-location .user-profile {
+  background-color: #efefef;
+  border-radius: 9px;
+  padding: 11px 6px;
+}
+
+.become-host-location .user-profile-picture button {
+  border: none;
+  background-color: #40d0d3;
+  padding: 10px 8px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+.become-host-location .user-profile-picture button:hover {
+  transform: scale(1.07);
+}
+.become-host-main .back-button {
+  background-color: #efefef;
+  cursor: pointer;
+  border-radius: 9px;
+  padding: 8px 0px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  transition: transform 0.2s linear;
+}
+.become-host-main .back-button:hover {
+  transform: scale(1.07);
+}
+/* Radio Button */
+.become-host-main input[type="checkbox"],
+input[type="radio"] {
+  width: 21px;
+  height: 21px;
+}
+.become-host-main input[type="radio"] {
+  accent-color: gray;
+}
+.become-host-main input[type="radio"]:checked + label {
+  color: #40d0d3;
+}
+/* OWn a company */
+.own-company {
+  background-color: #efefef;
+  border-radius: 9px;
+  padding: 18px 17px;
+  width: 75%;
+}
+/* Ask For Property PopUp */
+.pop-up {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  inset: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 90px 0px;
+  z-index: 99;
+  animation: moreProperty 0.3s linear;
+}
+@keyframes moreProperty {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Image Button Upload */
+.image-button {
+  background-color: transparent !important;
+  border: none !important;
+  overflow: hidden;
+}
+.image-button::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.image-button::before {
+  content: "Upload Picture";
+  display: inline-block;
+  background-color: #40d0d3;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 10px 10px;
+  width: 256px;
+  transition: transform 0.2s;
+  text-align: center;
+}
+.changeImageButton::before {
+  content: "Add / Change Photo" !important;
+}
+.uploadSelfieButton::before {
+  content: "Upload Selfie" !important;
+}
+
+.image-button:hover {
+  transform: scale(1.07);
+}
+.image-button:active::before {
+  display: none;
+}
+input[type="checkbox"] {
+  accent-color: #40d0d3;
+}
+/* Mobile number input */
+.intl-tel-input {
+  width: 100%;
+}
+/* Hide input number arrows */
+
+.verify-number-input input::-webkit-outer-spin-button,
+.verify-number-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+/* .verify-number-input input[type=number] {
+  -moz-appearance: textfield;
+} */
+#become-host-name {
+  display: block;
+}
+#become-host-location {
+  display: none;
+}
+#become-host-url {
+  display: none;
+}
+#become-host-type {
+  display: none;
+}
+#company-info {
+  display: none;
+}
+#own-company {
+  display: none;
+}
+#photo-identity {
+  display: none;
+}
+#ask-for-property {
+  display: none;
+}
+#verify-number {
+  display: none;
+}
+#dont-own-comapny {
+  display: none;
+}
+
+/* //////////////// Media Queries ///////////////// */
+@media (max-width: 1200px) {
+  .become-host__form {
+    margin-bottom: -4rem;
+  }
+
+  .become-host__form-content {
+    width: 100%;
+  }
+
+  .verify-button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-button::before {
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .become-host__heading {
+    font-size: 8vmin;
+  }
+
+  .become-host__form-input {
+    width: 100%;
+  }
+
+  .pop-up-inner {
+    width: 90%;
+  }
+
+  .verify-button {
+    margin-top: -2rem;
+    width: 35%;
+  }
+
+  .verify-button ~ p {
+    margin-top: -2rem;
+  }
+
+  .user-profile {
+    width: 100%;
+  }
+
+  .image-button {
+    padding: 0 !important;
+    margin-top: 0.7rem;
+  }
+
+  .image-button::before {
+    width: 100%;
+  }
+
+  .changeImageButton {
+    width: 385%;
+  }
+
+  .photo-btn {
+    width: 450%;
+  }
+
+  .own-company {
+    width: 100%;
+  }
+
+  .ask-for-property-inner {
+    width: 90%;
+  }
+
+  .property-btn {
+    width: 100%;
+  }
+
+  .done-btn {
+    width: 100%;
+  }
+
+  .comapny-info_container {
+    width: 100%;
+  }
+
+  .next_btn,
+  .back-button {
+    width: 50%;
+  }
+}

@@ -1,0 +1,9 @@
+body{
+    background-color: #f8f8f8 !important;
+}
+header{
+    background-color: white;
+}
+.radius-btn{
+    border-radius: 10px;
+}

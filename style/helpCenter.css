@@ -1,0 +1,272 @@
+.section-padding {
+  padding-top: 70px;
+}
+/* Search Bar */
+.help-section .search {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 40px;
+  padding: 4px 10px;
+  width: 44%;
+  margin: 0 auto;
+  transition: 0.2s linear;
+  box-shadow: 6px 26px 35px 0 rgba(0, 0, 0, 0.04);
+}
+
+.help-section .search:hover > .search-txt {
+  width: 80%;
+  padding: 0 10px;
+  color: black;
+}
+.help-section .search:hover {
+  width: 70%;
+  margin: 0 auto;
+}
+.help-section .search-btn-help {
+  color: black !important;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fec657;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.help-section .search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  transition: ease-in 0.4s;
+  line-height: 40px;
+  text-align: left;
+  width: 90%;
+}
+.help-section .search ::placeholder {
+  text-align: left;
+  font-size: 13px;
+  color: #1e1e1e;
+  padding-left: 20px;
+}
+
+/* Host and Guest cards */
+.help-section .cards-help-center {
+  margin-top: 160px;
+}
+.help-section .host-card-help-center {
+  background-image: url("../images/help-center-host.png");
+  background-repeat: no-repeat;
+  min-height: 300px;
+  background-size: cover;
+  border-radius: 33px;
+}
+
+.help-section .guest-card-help-center {
+  background-image: url("../images/help-center-guest.png");
+  background-repeat: no-repeat;
+  min-height: 300px;
+  background-size: cover;
+  border-radius: 33px;
+}
+.host-guest-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 8px 12px;
+  width: 47%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.host-guest-button:hover {
+  transform: scale(1.1);
+}
+/* .host-guest-button:focus{
+    background-color:#fec657;
+    border-color: transparent;
+    outline: none;
+} */
+.filter-button-single {
+  background-color: #9d9d9d;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 9px;
+  padding: 7px 0px;
+  width: 161px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.button.is-checked {
+  background: #40d0d3;
+  color: #fff;
+  outline: none;
+}
+/* .filter-host .element-item {
+  position: unset !important;
+} */
+.filter-host .transition {
+  position: unset !important;
+  height: unset !important;
+}
+.filter-host {
+  position: unset !important;
+  height: unset !important;
+}
+.filter-guest .transition {
+  position: unset !important;
+}
+.filter-guest {
+  position: unset !important;
+  height: unset !important;
+}
+.help-section .questions-assist .filter-button .filter-button-single:hover {
+  transform: scale(1.05);
+}
+.questions-assist a {
+  text-decoration: none !important;
+}
+.questions-assist a:hover {
+  color: unset !important;
+}
+#host-section {
+  display: none;
+  animation: transform 0.5s;
+}
+#guest-section {
+  display: none;
+  animation: transform 0.5s;
+}
+@keyframes transform {
+  from {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+  to {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+/* Frequently asked Question */
+.faq-section .mb-0 > a {
+  display: block;
+  position: relative;
+}
+.questions-assist a {
+  color: unset !important;
+  text-decoration: none !important;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.questions-assist .card {
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+}
+.questions-assist .card-body a {
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 16%);
+  border-radius: 12px !important;
+  padding: 30px 70px 30px 20px !important;
+  border: 1.2px solid transparent;
+}
+.questions-assist a[aria-expanded="true"] {
+  width: 100%;
+  height: 100%;
+  border: 1.2px solid #40d0d3 !important;
+}
+.questions-assist .card-body a::after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: 0;
+  font-weight: 600;
+  top: 40%;
+  right: 21px;
+}
+.questions-assist .card-body a[aria-expanded="true"]:after {
+  content: "\f068";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  top: 40%;
+  right: 21px;
+}
+.questions-assist .accordian-description {
+  font-size: 12px;
+  width: 70%;
+  color: #8d9598;
+  padding: 10px 0px !important;
+  font-weight: normal;
+}
+.card-body {
+  border: none !important;
+}
+.questions-assist .card-header {
+  background-color: transparent;
+  border: none;
+  padding: 0px !important;
+}
+
+@media (max-width: 1023px) and (min-width: 320px) {
+  .main-heading {
+    font-size: 26px;
+  }
+  .help-section .need-help-text {
+    font-size: 28px;
+  }
+  .help-section .help-section-inner {
+    margin-top: 70px;
+  }
+  .help-section .cards-help-center {
+    margin-top: 89px;
+  }
+  .help-section .search {
+    width: 70%;
+    top: 150px;
+  }
+  .help-section .search-txt {
+    width: 80%;
+  }
+  .help-section .search:hover {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .help-section .host-card-help-center {
+    width: 100%;
+  }
+  .help-section .guest-card-help-center {
+    width: 100%;
+  }
+  .given-options .assist-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .given-options .assist-button button {
+    width: 70%;
+  }
+  .filter-button {
+    width: 100%;
+  }
+  .filter-button-single {
+    width: 47%;
+  }
+  .questions-assist .accordian-description {
+    width: 100%;
+  }
+  .questions-assist {
+    padding: 0px 20px;
+  }
+}

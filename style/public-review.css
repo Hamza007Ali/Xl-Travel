@@ -1,0 +1,67 @@
+textarea {
+  border: none;
+  outline: none;
+  resize: none !important;
+  border-radius: 6px;
+}
+.review-padding {
+  padding: 30px 40px;
+}
+.display-block {
+  display: block;
+}
+
+.review-popup {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  overflow: hidden;
+}
+/* -- Popup Animation -- */
+.popup-animate {
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.8s;
+}
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+button:focus-visible {
+  outline: none !important;
+}
+
+@media (min-width: 320px) {
+  .w-29 {
+    width: 67%;
+  }
+}
+@media (min-width: 992px) {
+  .w-29 {
+    width: 29%;
+  }
+ 
+}
+

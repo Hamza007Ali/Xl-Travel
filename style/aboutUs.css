@@ -1,0 +1,423 @@
+@font-face {
+  font-family: signPainter;
+  src: url(../fonts/signpainter.ttf);
+}
+
+.about-us {
+  background-image: url("../images/about-us-hero-image.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+}
+
+.about-us .container-main {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  width: 90%;
+}
+
+.hero-text h1 {
+  text-shadow: 0 3px 6px rgba(255, 255, 255, 0.16);
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.hero-text h3 {
+  text-shadow: 0 3px 6px rgba(255, 255, 255, 0.16);
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 20px;
+  opacity: 0;
+  animation: showSubHeading 1s linear 2s forwards;
+}
+
+@keyframes showSubHeading {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/*//////////////// MEMORIES & JOURNEY SECTIONS STYLING ////////////*/
+.row {
+  margin-right: 0;
+}
+
+.memories-section .row {
+  padding-top: 50px;
+}
+
+.memories__image,
+.journey__image {
+  width: 75%;
+}
+
+.memories__main-img,
+.journey__main-img {
+  position: relative;
+  width: 100%;
+}
+
+.memories__small-img,
+.journey__small-img {
+  position: absolute;
+  bottom: -11%;
+  left: 65%;
+  width: 50%;
+}
+
+.memories__dots,
+.journey__dots {
+  position: absolute;
+  top: -2%;
+  left: 57%;
+  width: 27%;
+  z-index: -1;
+}
+
+.memories__text h2,
+.journey__text h2 {
+  color: #14395b;
+  font-weight: 500;
+}
+
+.memories__text p {
+  padding-right: 15%;
+  color: #303030;
+}
+
+.journey__text p {
+  padding-right: 30%;
+  color: #303030;
+}
+
+.journey__text {
+  margin-top: -50px;
+}
+
+@media (max-width: 1200px) {
+  .journey__text p {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .journey__text h2 {
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 992px) {
+  .memories-section .row {
+    padding-top: 1.6rem;
+  }
+
+  .memories__image,
+  .journey__image {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .memories__text,
+  .journey__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .journey__text {
+    margin-bottom: 1rem;
+  }
+
+  .memories__text p,
+  .memories__text h2 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+@media (max-width: 576px) {
+  .memories__image,
+  .journey__image {
+    width: 90%;
+  }
+}
+
+/* ////////////////////// QOUTE SECTION ///////////////////// */
+.quote-section {
+  min-height: 20rem;
+  background-image: linear-gradient(76deg, #b7ffd470 11%, #0db3ff70 101%);
+  padding: 2rem 5%;
+}
+
+.quote__text p:first-child {
+  font-size: 4.5rem;
+  text-align: center;
+  font-family: signPainter;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.quote__text p:nth-child(2) {
+  font-size: 3.6rem;
+  text-align: center;
+  width: 80%;
+  font-family: signPainter;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .quote__text p:first-child {
+    font-size: 10vmin;
+  }
+
+  .quote__text p:nth-child(2) {
+    font-size: 8vmin;
+    width: 90%;
+  }
+}
+
+/* ////////////////////// TEAM SECTION ///////////////////// */
+
+.team-section {
+  margin-top: 3rem;
+  padding-top: 5rem;
+  min-height: 45rem;
+  background-image: url("../images/about-team-bg.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.team-section .container-main h3 {
+  color: #14395b;
+  font-size: 2.5rem;
+}
+
+.team-section .container-main .main-para {
+  color: #303030;
+}
+
+.team__img figure {
+  width: 70%;
+}
+
+.team__text {
+  color: #303030;
+  margin-left: -4rem;
+}
+
+@media (max-width: 992px) {
+  .team__text {
+    margin-left: 0;
+  }
+
+  .team-section {
+    padding-top: 2rem;
+  }
+
+  .team-section .container-main h3 {
+    color: #14395b;
+    font-size: 2rem;
+  }
+}
+
+/* ////////////////////// STRENGTHS SECTION ///////////////////// */
+.strengths-section {
+  min-height: 50rem;
+  background-image: url("../images/about-features.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.strengths-content {
+  min-height: 22rem;
+}
+
+.strengths-content .col-lists {
+}
+
+.strengths-content .col-lists h3 {
+  color: #40d0d3;
+}
+
+.strengths-content .col-lists ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+.strengths-content .col-lists li {
+  margin: 1.6rem 0;
+  font-weight: 500;
+  font-size: 1.1;
+  cursor: pointer;
+}
+
+.strengths-content .col-lists li:first-child {
+  color: #40d0d3;
+}
+
+.strengths-content .col-lists li:hover {
+  color: #40d0d3;
+}
+
+.strengths-content .col-content .box .item-content {
+  width: 80%;
+  padding: 2rem 3vmin;
+  border-radius: 6px;
+  box-shadow: 0 32px 64px 0 rgba(57, 20, 0, 0.04);
+  background-color: #00000030;
+}
+
+.strengths-content .col-content h5 {
+}
+
+.strengths-content .col-content p {
+  line-height: 1.7;
+}
+
+@media (max-width: 1200px) {
+  .strengths-content .col-content .box {
+    width: 100%;
+  }
+
+  .strengths-content .col-lists h3 {
+    font-size: 4vmin;
+  }
+}
+
+@media (max-width: 992px) {
+  .strengths-content {
+    width: 100%;
+  }
+
+  .strengths-content .col-content .box .item-content {
+    padding: 1.5rem 5vmin;
+    width: 100%;
+  }
+
+  .strengths-content .col-lists li {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .strengths-section {
+    background-image: url("../images/bg-strenghts.png");
+    margin: 2rem 0;
+  }
+
+  .strengths-content {
+    padding: 2rem 1.5rem;
+    min-height: 22rem;
+  }
+
+  .strengths-content .col-lists h3 {
+    width: 102%;
+    font-size: 1.8rem;
+  }
+
+  .strengths-content .col-content .box .item-content {
+    width: 107%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* /////////////////// INVITAION STYLING ////////////////// */
+.invitation {
+  padding: 0 5%;
+  display: grid;
+  justify-items: center;
+}
+
+.invitation h3 {
+  color: #14395b;
+  font-size: 2.8rem;
+  width: min(95%, 40rem);
+  margin-bottom: 3rem;
+}
+
+.invitation-btn {
+  padding: 1rem 2rem;
+}
+
+.invitation-btn p:first-child {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.invitation-btn p:last-child {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.invitation__para {
+  margin-top: 0.5rem;
+  padding: 2rem;
+  font-size: 1.8rem;
+  color: #40d0d3;
+}
+
+@media (max-width: 992px) {
+  .invitation h3 {
+    width: 90%;
+  }
+
+  .invitation-btn {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .invitation-btn p:first-child {
+    font-size: 4.5vmin;
+  }
+
+  .invitation-btn p:last-child {
+    font-size: 3.5vmin;
+  }
+
+  .invitation__para {
+    font-size: 5vmin;
+  }
+}
+
+@media (max-width: 576px) {
+  .invitation h3 {
+    font-size: 7vmin;
+  }
+
+  .invitation-btn {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .invitation-btn p:first-child {
+    font-size: 4.3vmin;
+  }
+
+  .invitation-btn p:last-child {
+    font-size: 3.5vmin;
+  }
+
+  .invitation__para {
+    padding: 0.6rem;
+    font-size: 1.5rem;
+  }
+}

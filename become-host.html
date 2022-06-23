@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo2.png" />
+  <!-- Style sheets link-->
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <link rel="stylesheet" href="./assets/style/becomeHost.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Mobile Number with country code -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet"
+    media="screen" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
+  <!-- AOS Aniamtion -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Become A Host</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div
+      class="header-index header-wrapper d-flex justify-content-between align-items-center container-main py-3 px-3 px-xl-0">
+      <div class="header-logo">
+        <a href="/">
+          <img loading="lazy" style="height: 86px" class="cursor-pointer" src="assets/images/logo.png"
+            alt="xlTravel-Logo" />
+        </a>
+      </div>
+      <div class="d-block d-lg-none w-70 mx-auto">
+        <div id="header-search-mobile" class="header-search-mobile hide" onclick="displayBlock(`search-index`)">
+          <div class="d-flex justify-content-center position-relative align-items-center">
+            <input class="w-100 mobile-search-input-header mx-auto pl-4 py-1 box-shadow" disabled
+              placeholder="Hey! Where do you want to go?" />
+            <svg style="left: 10%; top: 30%" class="svg-icon position-absolute" fill="#00b2d3"
+              aria-labelledby="title desc" height="15" width="15" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 19.9 19.7">
+              <title id="title">Search Icon</title>
+              <desc id="desc"></desc>
+              <g class="search-path" fill="none" stroke="#00b2d3">
+                <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+                <circle cx="8" cy="8" r="7" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <nav class="nav-bar d-none d-lg-block">
+          <ul class="d-flex align-items-center list-unstyled">
+            <li><a href="/home.html">Home</a></li>
+            <li>
+              <a class="hot-deail-text position-relative d-flex align-items-center justify-content-center"><img
+                  class="position-absolute" style="height: 24px; top: -21px" src="./assets/images/icons/hot-deal.gif"
+                  alt="hot-deatil" />Hot Deals</a>
+            </li>
+            <li><a>Xl Travel Zone</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./help-center.html">Help Center</a></li>
+            <li><a>Host Zone</a></li>
+            <li>
+              <a href="./list-your-property.html"><button class="teaslih-text-button cursor-pointer">
+                  List Your Property
+                </button></a>
+            </li>
+            <li class="mr-0">
+              <a>
+                <button
+                  class="login-signup_btn tealish-gradient-button d-flex justify-content-center align-items-center cursor-pointer">
+                  <img class="mr-2" height="13px" src="./assets/images/icons/lock.png" alt="lock" />
+                  LOGIN / SIGN UP
+                </button></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="d-block d-lg-none">
+          <input type="checkbox" id="openSideMenu" class="openSideMenu" />
+          <label for="openSideMenu" class="menuIconToggle">
+            <div class="hamb-line dia part-1"></div>
+            <div class="hamb-line hor"></div>
+            <div class="hamb-line dia part-2"></div>
+          </label>
+          <nav class="mobile-nav">
+            <ul>
+              <li><a href="/home.html">Home</a></li>
+              <li>
+                <a href="#" class="hot-deail-text d-flex align-items-center">Hot Deals
+                  <img style="
+                        height: 27px;
+                        margin-left: 12px;
+                        margin-bottom: 8px;
+                      " src="./assets/images/icons/hot-deal.gif" alt="hot-deatil" /></a>
+              </li>
+              <li><a href="#">Xl Travel Zone</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./help-center.html">Help Center</a></li>
+              <li><a href="#">Host Zone</a></li>
+              <div class="d-flex flex-column align-items-center pt-2 px-2">
+                <a href="./list-your-property.html">
+                  <button class="teaslih-text-button cursor-pointer">
+                    List Your Property
+                  </button>
+                </a>
+                <button
+                  class="login-signup_btn tealish-gradient-button mt-4 d-flex justify-content-center align-items-center cursor-pointer">
+                  <img class="mr-2" height="13px" src="./assets/images/icons/lock.png" alt="lock" />
+                  LOGIN / SIGN UP
+                </button>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+  <section class="become-host-main container-main mx-auto pt-5 pb-sm-3">
+    <div data-aos="fade-up" data-aos-duration="3000" class="pt-5 pt-lg-3 pl-4 pl-xl-0">
+      <p class="become-host__heading color-blue font-size-30 font-weight-600">
+        Our Guest Need More Information
+        <span class="d-inline d-sm-block">About You</span>
+      </p>
+      <p class="pt-2">All Information Is Required Unless Marked Optional</p>
+    </div>
+    <form id="become-host-name" class="become-host__form bg-white px-4 pt-3 pb-5 mt-4 mt-lg-5">
+      <div class="w-88 become-host__form-content">
+        <div class="become-host__form-input w-31 pb-2">
+          <p class="font-weight-500 font-size-15">Display Name</p>
+          <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">This is the name that will be shown on
+            <span class="color-tealish">XL Travel </span> website and
+            app</label><br />
+          <input class="w-100" type="text" placeholder="Name" />
+        </div>
+        <div class="w-100">
+          <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Date of birth</label><br />
+          <div class="d-md-flex justify-content-between align-items-center w-100">
+            <div class="become-host__form-input w-31 mb-2 mb-sm-0">
+              <select class="custom-select">
+                <option selected disabled>Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+            <div class="become-host__form-input w-31 mb-2 mb-sm-0">
+              <select class="custom-select">
+                <option selected disabled>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+            <div class="become-host__form-input w-31 mb-2 mb-sm-0">
+              <select class="custom-select">
+                <option selected disabled>Year</option>
+                <option value="1">1996</option>
+                <option value="2">1997</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="border-bottom-2 py-2 py-sm-4"></div>
+        <div class="w-100">
+          <p class="font-weight-500 font-size-15 pt-3 pb-2">
+            Contact Details
+          </p>
+          <div class="d-md-flex justify-content-between align-items-center w-100">
+            <div class="become-host__form-input w-31">
+              <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Select Country</label><br />
+              <select class="custom-select">
+                <option selected disabled>Country / Region</option>
+                <option value="1">Bahrain</option>
+                <option value="2">Belgium</option>
+                <option value="3">Brazil</option>
+                <option value="4">Egypt</option>
+              </select>
+            </div>
+            <div class="become-host__form-input w-31">
+              <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Mobile Number</label><br />
+              <input class="w-100" id="phone" type="tel" />
+            </div>
+            <div style="margin-top: 54px" class="become-host__form-input w-31 d-flex align-items-center">
+              <button class="verify-button font-size-12 font-weight-500" type="button"
+                onclick="displayBlock(`verify-number`)">
+                Verify Number
+              </button>
+              <p class="font-size-12 ml-3">
+                ( We will send you SMS to verify )
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100">
+          <div class="d-md-flex justify-content-between align-items-center w-100">
+            <div class="become-host__form-input w-31">
+              <label class="font-size-13 font-weight-500 opacity-9 pt-4 pb-2">WhatsApp Number ( Optional )</label><br />
+              <input class="w-100" id="whatsAppNumber" type="tel" />
+            </div>
+            <div class="become-host__form-input w-31">
+              <label class="font-size-13 font-weight-500 opacity-9 pt-4 pb-2">Office Number ( Optional )</label><br />
+              <input class="w-100" placeholder="543252-24" type="tel" />
+            </div>
+            <div class="w-31"></div>
+          </div>
+        </div>
+        <div class="w-100">
+          <div class="d-md-flex justify-content-between align-items-center w-100">
+            <div class="become-host__form-input w-31">
+              <label class="font-size-13 font-weight-500 opacity-9 pt-4 pb-2">Password</label><br />
+              <input class="w-100" type="password" placeholder="*********" />
+            </div>
+            <div class="become-host__form-input w-31">
+              <label class="font-size-13 font-weight-500 opacity-9 pt-4 pb-2">Confirm Password</label><br />
+              <input class="w-100" type="password" placeholder="*********" />
+            </div>
+            <div class="w-31"></div>
+          </div>
+        </div>
+        <div class="w-100 pt-4 mb-5 mb-sm-0">
+          <div class="w-100 d-flex justify-content-end align-items-center">
+            <button type="button" value="submit" class="yellow-button next_btn w-26"
+              onclick="displayNone(`become-host-name`) , displayBlock(`become-host-location`) , topFunction()">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div id="verify-number" class="pop-up verify-number-input w-100">
+      <div class="container-main mx-auto">
+        <div id="pop-up-inner" class="pop-up-inner rounded-md bg-white w-sm-50 mx-auto py-4">
+          <div class="d-flex flex-column align-items-center w-100 px-4">
+            <div class="d-flex justify-content-center pb-4">
+              <img style="width: 70px" src="./assets/images/logo.png" alt="logo" />
+            </div>
+            <p class="text-center font-size-18 font-weight-600">
+              Verifaction
+            </p>
+            <p class="text-center font-size-16 font-weight-500 pt-3">
+              OTP is sent to your mobile number
+            </p>
+            <div class="pt-4 w-60">
+              <form class="text-center" id="verify-otp-form">
+                <div class="d-flex justify-content-center align-items-center justify-content-between">
+                  <input id="codeBox1" required class="w-22 py-3 text-center" type="number" maxlength="1"
+                    onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)" />
+                  <input id="codeBox2" required class="w-22 py-3 text-center" type="number" maxlength="1"
+                    onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)" />
+                  <input id="codeBox3" required class="w-22 py-3 text-center" type="number" maxlength="1"
+                    onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)" />
+                  <input id="codeBox4" required class="w-22 py-3 text-center" type="number" maxlength="1"
+                    onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)" />
+                </div>
+                <div class="w-60 mx-auto">
+                  <button style="padding: 12px 0px" class="yellow-button mt-5 mb-3 w-100">
+                    Verify
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form id="become-host-location" class="become-host-location bg-white px-4 pt-3 pb-5 mt-5 overflow-hidden">
+      <div class="w-88 become-host__form-content">
+        <div class="w-100">
+          <p class="font-weight-500 font-size-15">Location Details</p>
+          <label class="font-size-14 font-weight-500 opacity-9 pt-3 pb-1">Where you live</label><br />
+          <div class="d-md-flex justify-content-between align-items-center w-100">
+            <div class="become-host__form-input w-31 mb-2 mb-md-0">
+              <input class="w-100" type="text" placeholder="Address" />
+            </div>
+            <div class="become-host__form-input w-31 mb-2 mb-md-0">
+              <select class="custom-select">
+                <option selected disabled>City</option>
+                <option value="1">São Paulo</option>
+                <option value="2">Rio de Janeiro</option>
+                <option value="1">Brasília</option>
+                <option value="2">Salvador</option>
+              </select>
+            </div>
+            <div class="become-host__form-input w-31 mb-2 mb-md-0">
+              <input class="w-100" type="number" placeholder="Zip Code" />
+            </div>
+          </div>
+        </div>
+        <div class="w-100">
+          <label class="font-size-13 font-weight-500 opacity-9 pt-4 pb-2">Nationality</label><br />
+          <div class="d-md-flex align-items-center justify-content-between w-100">
+            <div class="become-host__form-input w-31 mb-2 mb-md-0">
+              <select class="custom-select">
+                <option selected disabled>State / Province</option>
+                <option value="1">Bremen</option>
+                <option value="2">Saxony</option>
+                <option value="3">Hamburg</option>
+                <option value="4">Saxony-Anhalt</option>
+                <option value="5">Hesse</option>
+                <option value="6">Berlin</option>
+              </select>
+            </div>
+            <div class="become-host__form-input w-31 mb-2 mb-md-0">
+              <select class="custom-select">
+                <option selected disabled>Country / Region</option>
+                <option value="1">Bahrain</option>
+                <option value="2">Belgium</option>
+                <option value="3">Brazil</option>
+                <option value="4">Egypt</option>
+              </select>
+            </div>
+            <div class="become-host__form-input w-31 mb-2 mb-md-0">
+              <select class="custom-select">
+                <option selected disabled>Nationality</option>
+                <option value="1">Pakistan</option>
+                <option value="2">Colombian</option>
+                <option value="3">Mexcian</option>
+                <option value="4">British</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <p class="font-size-13 font-weight-500 opacity-9 pt-4 pb-2 opacity-9">
+          * Personal information will be only visible to you
+        </p>
+        <div class="border-bottom-2 py-2 py-sm-4"></div>
+        <div class="w-100">
+          <p class="font-weight-500 font-size-15 py-3">Describe Yourself</p>
+          <div class="w-100">
+            <textarea rows="5" class="w-100 border" placeholder="Tell us something about yourself....."></textarea>
+          </div>
+        </div>
+        <div class="border-bottom-2 py-2 py-md-4"></div>
+        <div class="w-100">
+          <p class="font-weight-500 font-size-15 py-3">
+            Add / Change profile photo ( Optional )
+          </p>
+          <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Put a face to your name ! We will add this to
+            your profile, and
+            share it with future host and guest.</label><br />
+          <div class="w-100 user-profile-picture d-md-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center user-profile w-70">
+              <div class="w-19" id="changeImage" style="
+                    background-image: url(./assets/images/icons/profilePicture.png);
+                    height: 96px;
+                    width: 119px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "></div>
+              <p class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">
+                Your profile matters. Pick a clear and friendly-looking one,
+                to increase booking.
+              </p>
+            </div>
+            <div class="w-26">
+              <input class="image-button changeImageButton" type="file" id="changeImageButton"
+                accept=".png, .jpg, .jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="pt-5">
+          <div class="w-100 d-flex justify-content-end align-items-center">
+            <button type="button" class="back-button w-19 mr-2 mr-sm-5"
+              onclick="displayNone(`become-host-location`) , displayBlock(`become-host-name`) , topFunction()">
+              Back
+            </button>
+            <button type="button" class="yellow-button next_btn w-19"
+              onclick="displayNone(`become-host-location`) , displayBlock(`become-host-url`) , topFunction()">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form id="become-host-url" class="become-host-url bg-white px-4 pt-3 pb-5 mt-5">
+      <div class="become-host__form-content w-97">
+        <div class="w-100">
+          <p class="font-weight-600 font-size-16">Where can guest find you</p>
+          <div class="d-sm-flex flex-wrap justify-content-between align-items-center w-100">
+            <div class="become-host__form-input w-31">
+              <label class="font-size-15 font-weight-500 opacity-9 pt-3 pb-sm-2">Facebook</label><br />
+              <div class="position-relative w-100">
+                <input class="pl-4 w-100" type="text" placeholder="Add Your Facebook Url" />
+                <img style="left: 11px; top: 10px; width: 20px" class="position-absolute"
+                  src="./assets/images/icons/url.png" alt="url" />
+              </div>
+            </div>
+            <div class="become-host__form-input w-31">
+              <label class="font-size-15 font-weight-500 opacity-9 pt-3 pb-sm-2">Youtube</label><br />
+              <div class="position-relative w-100">
+                <input class="pl-4 w-100" type="text" placeholder="Add Your Youtube Url" />
+                <img style="left: 11px; top: 10px; width: 20px" class="position-absolute"
+                  src="./assets/images/icons/url.png" alt="url" />
+              </div>
+            </div>
+            <div class="become-host__form-input w-31">
+              <label class="font-size-15 font-weight-500 opacity-9 pt-3 pb-sm-2">Twitter</label><br />
+              <div class="position-relative w-100">
+                <input class="pl-4 w-100" type="text" placeholder="Add Your Twitter Url" />
+                <img style="left: 11px; top: 10px; width: 20px" class="position-absolute"
+                  src="./assets/images/icons/url.png" alt="url" />
+              </div>
+            </div>
+            <div class="become-host__form-input w-31">
+              <label class="font-size-15 font-weight-500 opacity-9 pt-3 pb-sm-2">Instagram</label><br />
+              <div class="position-relative w-100">
+                <input class="pl-4 w-100" type="text" placeholder="Add Your Instagram Url" />
+                <img style="left: 11px; top: 10px; width: 20px" class="position-absolute"
+                  src="./assets/images/icons/url.png" alt="url" />
+              </div>
+            </div>
+            <div class="become-host__form-input w-31">
+              <label class="font-size-15 font-weight-500 opacity-9 pt-3 pb-sm-2">LinkedIn</label><br />
+              <div class="position-relative w-100">
+                <input class="pl-4 w-100" type="text" placeholder="Add Your LinkedIn Url" />
+                <img style="left: 11px; top: 10px; width: 20px" class="position-absolute"
+                  src="./assets/images/icons/url.png" alt="url" />
+              </div>
+            </div>
+            <div class="become-host__form-input w-31">
+              <label class="font-size-15 font-weight-500 opacity-9 pt-3 pb-sm-2">Website</label><br />
+              <div class="position-relative w-100">
+                <input class="pl-4 w-100" type="text" placeholder="Add Your Website Url" />
+                <img style="left: 11px; top: 10px; width: 20px" class="position-absolute"
+                  src="./assets/images/icons/url.png" alt="url" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5">
+          <div class="w-100 d-flex justify-content-end align-items-center">
+            <button type="button" class="back-button w-19 mr-2 mr-sm-5"
+              onclick="displayNone(`become-host-url`) , displayBlock(`become-host-location`) , topFunction()">
+              Back
+            </button>
+            <button type="button" class="yellow-button next_btn w-19"
+              onclick="displayNone(`become-host-url`) , displayBlock(`become-host-type`) , topFunction()">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form id="become-host-type" class="become-host-type bg-white px-4 pt-3 pb-5 mt-5">
+      <div class="become-host__form-content w-97">
+        <div class="w-100">
+          <p class="font-weight-600 font-size-16">Host Type</p>
+          <p class="font-size-15 font-weight-500 pt-3 pb-2">
+            In order to comply with consumer authority commitments, we must
+            collect the following information from partners
+          </p>
+          <div class="own-company">
+            <div class="d-flex align-items-start">
+              <input type="radio" id="own" name="cpmpanyType" value="own" data-id="own-company"
+                onchange="onRadioCheckChange(this)" style="width: auto" class="mt-1" />
+              <label style="line-height: 27px" class="font-weight-600 font-size-14 ml-2" for="own">I host on my own
+                behalf<span class="font-weight-500 font-size-14"><br />Private host - any party who is renting out a
+                  property or properties for purposes which are outside their
+                  trade, business, or profession</span></label>
+            </div>
+
+            <div class="d-flex align-items-start pt-2">
+              <input type="radio" id="company" name="cpmpanyType" value="company" data-id="company-info"
+                onchange="onRadioCheckChange(this)" style="width: auto" class="mt-1" />
+              <label style="line-height: 27px" class="font-weight-600 font-size-14 ml-2" for="company">I represent a
+                company<span class="font-weight-500 font-size-14"><br />Professional host - any party who is renting out
+                  a
+                  property or properties for purposes relating to their trade,
+                  business, or profession (you are a property management
+                  company)</span></label>
+            </div>
+          </div>
+          <div id="own-company" class="pt-3">
+            <div class="own-company">
+              <p class="font-weight-500 font-size-16 pb-2 py-sm-4">
+                Do you own a company?
+              </p>
+              <div class="d-flex align-items-start">
+                <input type="radio" id="own-company-yes" name="owncompany" value="own-company-yes"
+                  data-id="company-info" onchange="onRadioCheckChange(this , true)" style="width: auto" />
+                <label class="font-weight-500 font-size-14 ml-2" for="own-company-yes">Yes I Own Comapny.</label>
+              </div>
+              <div class="d-flex align-items-start pt-2">
+                <input type="radio" id="own-company-no" name="owncompany" value="own-company-no"
+                  data-id="dont-own-comapny" onchange="onRadioCheckChange(this , true)" style="width: auto" />
+                <label class="font-weight-500 font-size-14 ml-2" for="own-company-no">No I Don’t Own Comapny.</label>
+              </div>
+            </div>
+          </div>
+          <div id="company-info" class="pt-3">
+            <div class="comapny-info_container w-31">
+              <p class="font-weight-500 font-size-16">Company Information</p>
+              <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Company’s legal name</label><br />
+              <input class="w-100" type="text" placeholder="Name" />
+            </div>
+            <div class="d-md-flex justify-content-between align-items-center pt-3">
+              <div class="become-host__form-input w-65">
+                <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Company Address</label><br />
+                <input class="w-100" type="text" placeholder="Address" />
+              </div>
+              <div class="become-host__form-input w-31">
+                <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Country / Region </label><br />
+                <select class="custom-select">
+                  <option selected disabled>Country / Region</option>
+                  <option value="1">Bahrain</option>
+                  <option value="2">Belgium</option>
+                  <option value="3">Brazil</option>
+                  <option value="4">Egypt</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-md-flex align-items-center justify-content-between pt-3">
+              <div class="become-host__form-input w-31">
+                <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Zip code</label><br />
+                <input class="w-100" type="number" placeholder="99000" />
+              </div>
+              <div class="become-host__form-input w-31">
+                <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">VAT Number</label><br />
+                <input class="w-100" type="number" placeholder="DE11111" />
+              </div>
+              <div class="w-31"></div>
+            </div>
+            <div class="border-bottom-2 py-3 py-md-4"></div>
+            <div>
+              <p class="font-weight-600 font-size-16 pt-2">
+                Ultimate beneficial owner Information
+              </p>
+              <p class="font-size-15 font-weight-400 pt-2">
+                Please provide the name of the ultimate beneficial owners of
+                the company. This is any individual who owns 20% or more of
+                the company either directly or through holding company OR
+                individual who holds the highest authority, responsibility and
+                decision-making for this company (e.g. CEO, Managing Director)
+              </p>
+              <div class="d-md-flex align-items-center justify-content-between pt-3">
+                <div class="become-host__form-input w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">First Name</label><br />
+                  <input class="w-100" type="text" placeholder="John" />
+                </div>
+                <div class="become-host__form-input w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Last Name</label><br />
+                  <input class="w-100" type="text" placeholder="Doe" />
+                </div>
+                <div class="become-host__form-input w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Nationality</label><br />
+                  <div class="d-flex align-items-center w-100">
+                    <div class="w-100">
+                      <select class="custom-select">
+                        <option selected disabled>Nationality</option>
+                        <option value="1">Pakistan</option>
+                        <option value="2">Colombian</option>
+                        <option value="3">Mexcian</option>
+                        <option value="4">British</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-between align-items-center pt-3">
+              <div class="become-host__form-input w-31">
+                <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Address ( Optional )</label><br />
+                <input class="w-100" type="text" placeholder="Address" />
+              </div>
+              <div class="become-host__form-input w-31">
+                <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Country / Region </label><br />
+                <select class="custom-select">
+                  <option selected disabled>Country / Region</option>
+                  <option value="1">Bahrain</option>
+                  <option value="2">Belgium</option>
+                  <option value="3">Brazil</option>
+                  <option value="4">Egypt</option>
+                </select>
+              </div>
+              <div class="become-host__form-input w-31">
+                <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Zip code</label><br />
+                <input class="w-100" type="number" placeholder="99000" />
+              </div>
+            </div>
+            <div class="w-100 pt-3">
+              <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Date of birth</label><br />
+              <div class="d-md-flex justify-content-between align-items-center w-100">
+                <div class="become-host__form-input w-31 mb-2 mb-md-0">
+                  <select class="custom-select">
+                    <option selected disabled>Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+                </div>
+                <div class="become-host__form-input w-31 mb-2 mb-md-0">
+                  <select class="custom-select">
+                    <option selected disabled>Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+                <div class="become-host__form-input w-31">
+                  <select class="custom-select">
+                    <option selected disabled>Year</option>
+                    <option value="1">1996</option>
+                    <option value="2">1997</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="color-tealish font-weight-500 font-size-15 my-4 my-md-5 cursor-pointer">
+                ADD ANOTHER ULTIMATE BENEFICIAL OWNER
+              </p>
+              <p class="font-weight-600 font-size-16">Government Control</p>
+              <p class="font-size-15 font-weight-400 pt-3 pb-4">
+                If any portion of the company is owned by or under control of
+                a government official, please provide the names below.
+              </p>
+              <div class="own-company">
+                <div class="d-flex align-items-start">
+                  <input type="radio" id="government-control" name="government-control" value="government-control"
+                    style="width: auto" class="mt-1" />
+                  <label style="line-height: 27px" class="font-weight-500 font-size-14 ml-2"
+                    for="government-control">Yes, it’s owned by or controlled of a government
+                    official</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="font-weight-500 font-size-16 pt-4 pb-3">
+                Identity Documents
+              </p>
+              <p class="font-size-15">
+                Make sure you attach required documents to verify your
+                identity
+              </p>
+              <div class="d-md-flex align-items-center justify-content-between pt-1">
+                <div class="become-host__form-input w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Identity type</label><br />
+                  <select class="custom-select">
+                    <option selected>passport</option>
+                    <option value="1">CNIC</option>
+                  </select>
+                </div>
+                <div class="become-host__form-input w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Identity number</label><br />
+                  <input class="w-100" type="number" placeholder="8383749873498723" />
+                </div>
+                <div class="w-31"></div>
+              </div>
+            </div>
+          </div>
+          <div id="dont-own-comapny" class="pt-3">
+            <div>
+              <p class="font-weight-500 font-size-16">
+                Confirm Your Identity
+              </p>
+              <p class="font-size-15">
+                Make sure everything’s accurate so we can verifyyour
+                account.<span class="color-tealish cursor-pointer">
+                  LEARN MORE</span>
+              </p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="w-31">
+                <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Legal Full Name</label><br />
+                <input class="w-100" type="text" placeholder="Comapny Name" />
+              </div>
+              <div class="w-31"></div>
+              <div class="w-31"></div>
+            </div>
+            <div>
+              <p class="font-size-13 font-weight-500 opacity-9 pt-3">
+                Home Address
+              </p>
+              <p class="font-size-11 pt-3">Where You Actually Live.</p>
+
+              <div class="d-flex align-items-center justify-content-between pt-1">
+                <div class="w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Country / Region</label><br />
+                  <input class="w-100" type="text" placeholder="Australia" />
+                </div>
+                <div class="w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Street</label><br />
+                  <input class="w-100" type="text" placeholder="Shirley Street PIMPAMA QLD 4209" />
+                </div>
+                <div class="w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Apt. Suite ( Optional )</label><br />
+                  <input class="w-100" type="text" placeholder="214 Jones Street # 110" />
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between pt-1">
+                <div class="w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">City</label><br />
+                  <input class="w-100" type="text" placeholder="Perth" />
+                </div>
+                <div class="w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">State</label><br />
+                  <input class="w-100" type="text" placeholder="New South Wales" />
+                </div>
+                <div class="w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Zip Code</label><br />
+                  <input class="w-100" type="number" placeholder="99900" />
+                </div>
+              </div>
+              <div class="w-100 pt-1">
+                <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Date of birth</label><br />
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <div class="w-31">
+                    <select class="custom-select">
+                      <option selected disabled>Month</option>
+                      <option value="1">January</option>
+                      <option value="2">February</option>
+                      <option value="3">March</option>
+                      <option value="4">April</option>
+                      <option value="5">May</option>
+                      <option value="6">June</option>
+                      <option value="7">July</option>
+                      <option value="8">August</option>
+                      <option value="9">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                    </select>
+                  </div>
+                  <div class="w-31">
+                    <select class="custom-select">
+                      <option selected disabled>Day</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+                  <div class="w-31">
+                    <select class="custom-select">
+                      <option selected disabled>Year</option>
+                      <option value="1">1996</option>
+                      <option value="2">1997</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between pt-1">
+                <div class="w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">place f birth</label><br />
+                  <input class="w-100" type="text" placeholder="Perth" />
+                </div>
+                <div class="w-31">
+                  <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Citizenship</label><br />
+                  <input class="w-100" type="text" placeholder="colombian" />
+                </div>
+                <div class="w-31"></div>
+              </div>
+
+              <div class="border-bottom-2 py-4"></div>
+              <div>
+                <p class="font-weight-500 font-size-16 pt-4 pb-3">
+                  Identity Documents
+                </p>
+                <p class="font-size-15">
+                  Make sure you attach required documents to verify your
+                  identity
+                </p>
+                <div class="d-flex align-items-center justify-content-between pt-1">
+                  <div class="w-31">
+                    <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Identity type</label><br />
+                    <select class="custom-select">
+                      <option selected>passport</option>
+                      <option value="1">CNIC</option>
+                    </select>
+                  </div>
+                  <div class="w-31">
+                    <label class="font-size-13 font-weight-500 opacity-9 pt-3 pb-2">Identity number</label><br />
+                    <input class="w-100" type="number" placeholder="8383749873498723" />
+                  </div>
+                  <div class="w-31"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5">
+          <div class="w-100 d-flex justify-content-end align-items-center">
+            <button type="button" class="back-button w-19 mr-2 mr-sm-5"
+              onclick="displayBlock('become-host-url') ,displayNone('become-host-type'), topFunction()">
+              Back
+            </button>
+            <button type="button" class="yellow-button next_btn w-19"
+              onclick="displayNone('become-host-type') , displayBlock('photo-identity') , topFunction()">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form id="photo-identity" class="become-host-type bg-white px-4 pt-3 pb-5 mt-5 overflow-hidden">
+      <div class="become-host__form-content w-97 pr-sm-5">
+        <p class="font-weight-500 font-size-16 py-3">Upload Identity Photo</p>
+        <div class="d-md-flex justify-content-between align-items-center">
+          <div class="own-company">
+            <div class="d-flex align-items-center">
+              <div class="w-19" id="fronSide" style="
+                    background-image: url(./assets/images/icons/profilePicture.png);
+                    height: 96px;
+                    width: 119px;
+                    background-size: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "></div>
+              <div>
+                <p class="font-weight-500">
+                  Upload Identity Front View Picture
+                </p>
+                <ul class="list-unstyled font-size-14 pt-2">
+                  <li>* Minimum Required Size 201px by 210px</li>
+                  <li>* Max Image Size is 10Mbs</li>
+                  <li>
+                    * Make Sure to Save Changes after Uploading fresh image.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w-22">
+            <input class="image-button photo-btn" type="file" id="frontUpload" accept=".png, .jpg, .jpeg" />
+          </div>
+        </div>
+        <div class="d-md-flex justify-content-between align-items-center pt-4">
+          <div class="own-company">
+            <div class="d-flex align-items-center">
+              <div class="w-19" id="backSide" style="
+                    background-image: url(./assets/images/icons/profilePicture.png);
+                    height: 96px;
+                    width: 119px;
+                    background-size: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "></div>
+              <div>
+                <p class="font-weight-500">
+                  Upload Identity Front View Picture
+                </p>
+                <ul class="list-unstyled font-size-14 pt-2">
+                  <li>* Minimum Required Size 201px by 210px</li>
+                  <li>* Max Image Size is 10Mbs</li>
+                  <li>
+                    * Make Sure to Save Changes after Uploading fresh image.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w-22">
+            <input class="image-button photo-btn" type="file" id="backUpload" accept=".png, .jpg, .jpeg" />
+          </div>
+        </div>
+        <div class="d-md-flex justify-content-between align-items-center pt-4">
+          <div class="own-company">
+            <div class="d-flex align-items-center">
+              <div class="w-19" id="uploadSelife" style="
+                    background-image: url(./assets/images/icons/profilePicture.png);
+                    height: 96px;
+                    width: 119px;
+                    background-size: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "></div>
+              <div>
+                <p class="font-weight-500">Upload Selfie</p>
+                <ul class="list-unstyled font-size-14 pt-2">
+                  <li>* Minimum Required Size 201px by 210px</li>
+                  <li>* Max Image Size is 10Mbs</li>
+                  <li>
+                    * Make Sure to Save Changes after Uploading fresh image.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w-22">
+            <input class="image-button uploadSelfieButton photo-btn" type="file" title=" " id="uploadSelifeButton"
+              accept=".png, .jpg, .jpeg" />
+          </div>
+        </div>
+        <div class="own-company w-100 mt-4">
+          <div class="d-flex align-items-start">
+            <input type="checkbox" id="correct-data" name="correct-data" value="correct-data"
+              style="width: auto; margin-top: 4px" />
+            <label class="font-weight-500 font-size-14 ml-2 mt-1" for="correct-data">I Confirm All Data Is
+              Correct</label>
+          </div>
+          <div class="d-flex align-items-start pt-2">
+            <input type="checkbox" id="agree-condition" name="correct-data" value="agree-condition"
+              style="width: auto; margin-top: 4px" />
+            <label class="font-weight-500 font-size-14 ml-2 mt-1" for="agree-condition">I Agree all Term &
+              Condition</label>
+          </div>
+        </div>
+        <div class="done-btn w-22 mx-auto pt-5">
+          <button type="button" style="padding: 14px 0px"
+            class="w-100 tealish-button color-blue font-weight-500 font-size-16"
+            onclick="displayBlock(`ask-for-property`)">
+            Done
+          </button>
+        </div>
+      </div>
+    </form>
+    <div id="ask-for-property" class="pop-up w-100">
+      <div class="container-main mx-auto">
+        <div class="ask-for-property-inner rounded-md bg-white w-65 mx-auto py-4">
+          <div class="d-flex flex-column align-items-center w-100 px-4">
+            <div class="d-flex justify-content-center pb-4">
+              <img style="width: 70px" src="./assets/images/logo.png" alt="logo" />
+            </div>
+            <p class="text-center font-size-17 font-weight-500">
+              CONGRATULATIONS, WELCOME ON BOARD!
+            </p>
+            <p class="text-center font-size-16 font-weight-500 pt-3 px-4">
+              YOUR ACCOUNT HAS BEEN SUCCESSFULLY CREATED AND AND WILL BE
+              ACTIVATED SHORTLY.
+            </p>
+            <p class="text-center color-tealish font-size-16 font-weight-500 pt-3">
+              In Mid time you can add your first property and edit your
+              account
+            </p>
+            <div class="w-26 property-btn" id="property-btn">
+              <a class="" href="./index.html">
+                <button style="padding: 12px 0px" class="yellow-button mt-5 mb-3 w-100">
+                  Add My First Property
+                </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer background-color-gray-three mt-sm-5 overflow-hidden">
+    <div data-aos="flip-up" data-aos-easing="linear" data-aos-duration="400"
+      class="footer-inner container-main mx-auto d-flex flex-column flex-lg-row">
+      <div class="footer-single logo-side w-26">
+        <div class="cursor-pointer">
+          <img loading="lazy" style="height: 122px" src="./assets/images/logo.png" alt="logo" />
+        </div>
+        <div class="ml-1">
+          <p class="text-white font-size-12 pt-4 font-weight-200">
+            XL Travel OU
+          </p>
+          <p class="text-white font-size-12 pt-2 font-weight-200">
+            Address: Sepapaja 6, Tallinn 1551, Estonia
+          </p>
+          <p class="text-white font-size-12 pt-2 font-weight-200">
+            Registry code: 16346723
+          </p>
+        </div>
+        <div class="pt-4">
+          <img loading="lazy" style="height: 36px; margin-right: 10px" class="social-media-icon"
+            src="./assets/images/icons/facebook.png" alt="facebook" />
+          <img loading="lazy" style="height: 36px; margin-right: 10px" class="social-media-icon"
+            src="./assets/images/icons/twitter.png" alt="facebook" />
+          <img loading="lazy" style="height: 36px; margin-right: 10px" class="social-media-icon"
+            src="./assets/images/icons/google-blue.png" alt="facebook" />
+          <img loading="lazy" style="height: 36px" class="social-media-icon" src="./assets/images/icons/instagram.png"
+            alt="facebook" />
+        </div>
+      </div>
+      <div class="list-inner w-42 d-flex flex-column flex-lg-row justify-content-between">
+        <div class="footer-single footer-links w-31 pt-5">
+          <ul class="text-white" style="list-style-type: '-'">
+            <p class="footer-link-headings font-weight-normal font-size-13">
+              About Us
+            </p>
+            <div class="footer-border-line"></div>
+            <li><a>What Is Xl Travel</a></li>
+            <li><a>Careers</a></li>
+            <li><a>Press</a></li>
+            <li><a>Travel Zone</a></li>
+          </ul>
+        </div>
+        <div style="border-bottom: 1.5px solid #1a8f91" class="d-block d-lg-none"></div>
+        <div class="footer-single footer-links w-31 pt-5">
+          <ul class="text-white" style="list-style-type: '-'">
+            <p class="footer-link-headings font-weight-normal font-size-13">
+              Help
+            </p>
+            <div class="footer-border-line"></div>
+            <li><a>Help Center</a></li>
+            <li><a>FAQs</a></li>
+            <li><a>Privacy Policy</a></li>
+            <li><a>Cookie Policy</a></li>
+            <li><a>Terms Of Use</a></li>
+          </ul>
+        </div>
+        <div style="border-bottom: 1.5px solid #1a8f91" class="d-block d-lg-none"></div>
+        <div class="footer-single footer-links w-31 pt-5">
+          <ul class="text-white" style="list-style-type: '-'">
+            <p class="footer-link-headings font-weight-normal font-size-13">
+              Partner with us
+            </p>
+            <div class="footer-border-line"></div>
+            <li><a>Partner Hub</a></li>
+            <li><a>Advertise On XL Travel</a></li>
+            <li><a>Affiliate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-single footer-links pt-5">
+        <div class="d-flex justify-content-center">
+          <div class="position-relative mr-4">
+            <img loading="lazy" style="height: 119px" src="./assets/images/icons/google-rating-badge.png"
+              alt="google-badge" />
+            <div style="top: 59px; left: 0; right: 0" class="d-flex flex-column align-items-center position-absolute">
+              <p style="color: #ee453e; line-height: 10px" class="font-size-18 font-weight-500">
+                4.7
+              </p>
+              <div>
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+              </div>
+            </div>
+          </div>
+          <div class="position-relative mr-4">
+            <img loading="lazy" style="height: 119px" src="./assets/images/icons/facebook-rating-badge.png"
+              alt="facebook-badge" />
+            <div style="top: 59px; left: 0; right: 0" class="d-flex flex-column align-items-center position-absolute">
+              <p style="color: #3b559f; line-height: 10px" class="font-size-18 font-weight-500">
+                4.7
+              </p>
+              <div>
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+                <img loading="lazy" style="height: 10px" src="./assets/images/icons/yellowStar-Two.png" alt="star" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img loading="lazy" style="height: 119px" src="./assets/images/icons/award-badge.png" alt="award-badge" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-main mx-auto">
+      <p class="text-center text-white font-weight-400 py-4 py-lg-5 font-size-14">
+        Copyright © 2022 Xl Travel. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- SIGNUP/LOGIN FORM -->
+  <section class="login_signup" id="login_signup-form">
+    <div class="login-signup_container">
+      <div class="form_container">
+        <div class="form_text d-none d-sm-block">
+          <p>
+            “ What is there more kindly the feelings between host & guest ?
+          </p>
+          <div class="form_date">
+            <p id="form_date">23/4/2022</p>
+            <p id="form_day">Friday</p>
+          </div>
+        </div>
+
+        <form class="login-signup_form">
+          <img src="./assets/images/logo.png" alt="logo" loading="lazy" />
+          <h5 id="login-signup_form-heading">Sign In</h5>
+
+          <div class="form_input-group d-none" id="first_name">
+            <label>First Name</label>
+            <input type="text" placeholder="John" required />
+          </div>
+
+          <div class="form_input-group d-none" id="last_name">
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe" required />
+          </div>
+
+          <div class="form_input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Mymail@gmail.com" required />
+          </div>
+
+          <div class="form_input-group" id="login_password">
+            <label>Password</label>
+            <input type="password" placeholder="*********" required />
+          </div>
+
+          <a href="./become-host.html" class="w-100">
+            <button class="form_btn" type="button" id="form_btn">
+              Sign In
+            </button>
+          </a>
+
+          <div class="form_links" id="form_links">
+            <span class="form_link-one" id="create-account_link">Create Account</span>
+            <span class="form_link-two" id="forget-password_link">Forget Password?</span>
+          </div>
+
+          <div class="social-login_links" id="social-login_links">
+            <p id="social-login_title">Or Sign in With</p>
+            <div class="social_login-btns">
+              <button type="button">
+                <img src="./assets/images/icons/facebookBlue.png" alt="facebook" loading="lazy" />
+                Facebook
+              </button>
+              <button type="button">
+                <img src="./assets/images/icons/google-icon.png" alt="facebook" loading="lazy" />
+                Google
+              </button>
+            </div>
+          </div>
+
+          <div class="form_line d-none" id="form_line"></div>
+
+          <p class="already_sign-btn d-none font-size-14 mt-3 border w-100 rounded-md text-center p-2 cursor-pointer"
+            id="already_sign-btn">
+            Already have account? Sign In
+          </p>
+
+          <p class="font-size-11 mt-3" id="login-policy">
+            By signing in, I agree to Xl Travel
+            <a href="">Terms of Use</a> and
+            <a href="">GDPR.EU</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="login-form" class="logIn-signUp login w-100">
+      <form class="login container-main mx-auto">
+        <div
+          id="login-form-inner"
+          class="login-inner bg-white w-39 mx-auto py-4"
+        >
+          <div class="d-flex flex-column align-items-center w-100 px-4">
+            <div class="d-flex justify-content-center pb-4">
+              <img
+                style="width: 70px"
+                src="./assets/images/logo.png"
+                alt="logo"
+              />
+            </div>
+            <h class="font-size-18 font-weight-500 text-center text-dark pb-5"
+              >Sign In</h
+            >
+            <div class="text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >Email</label
+              >
+              <input type="email" required placeholder="mymail@mail.com" />
+            </div>
+            <div class="password text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >Password</label
+              >
+              <input type="password" required placeholder="********" />
+            </div>
+            <div class="w-100 pb-4">
+              <a href="./become-host.html">
+                <button
+                  style="padding: 11px 0px"
+                  type="button"
+                  class="yellow-button w-100 font-size-16 font-weight-500"
+                >
+                  Sign In
+                </button>
+              </a>
+            </div>
+            <div class="w-100 d-flex justify-content-between pb-3">
+              <div>
+                <p
+                  class="color-tealish font-weight-400 font-size-16 cursor-pointer"
+                  onclick="displayBlock(`signup-form`) , displayNone(`login-form`)"
+                >
+                  Create account
+                </p>
+              </div>
+              <div>
+                <p
+                  class="color-tealish font-weight-400 font-size-16 cursor-pointer"
+                >
+                  Forget Password ?
+                </p>
+              </div>
+            </div>
+            <div class="d-flex w-100 align-items-center pb-4">
+              <span class="border-bottom-gray w-29"></span>
+              <p class="color-gray-two font-size-16 mx-2 mx-lg-4">
+                Or Sign In With
+              </p>
+              <span class="border-bottom-gray w-29"></span>
+            </div>
+            <div
+              class="w-100 d-flex justify-content-between align-items-center pb-3"
+            >
+              <button
+                class="form-button-bottom d-flex align-items-center justify-content-center font-weight-500 font-size-16"
+              >
+                <img
+                  style="width: 30px"
+                  class="mr-4"
+                  src="./assets/images/icons/facebookBlue.png"
+                  alt="facebook"
+                />
+                Facebook
+              </button>
+              <button
+                class="form-button-bottom d-flex align-items-center justify-content-center font-weight-500 font-size-16"
+              >
+                <img
+                  style="width: 30px"
+                  class="mr-4"
+                  src="./assets/images/icons/google-icon.png"
+                  alt="facebook"
+                />
+                Google
+              </button>
+            </div>
+            <div class="w-100">
+              <p class="font-size-11 text-center">
+                By signing in, I agree to Xl Travel
+                <span class="color-tealish underline-text"
+                  ><u>Terms of Use</u></span
+                >
+                and
+                <span class="color-tealish underline-text"><u>GDPR.EU</u></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section id="signup-form" class="logIn-signUp signup w-100">
+      <form class="login container-main mx-auto">
+        <div
+          id="signup-form-inner"
+          class="signup-inner bg-white w-39 mx-auto py-4"
+        >
+          <div class="d-flex flex-column align-items-center w-100 px-4">
+            <div class="d-flex justify-content-center pb-4">
+              <img
+                style="width: 70px"
+                src="./assets/images/logo.png"
+                alt="logo"
+              />
+            </div>
+            <h class="font-size-18 font-weight-500 text-center text-dark pb-5"
+              >Sign Up</h
+            >
+            <div class="text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >First Name</label
+              >
+              <input type="text" required placeholder="John" />
+            </div>
+            <div class="text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >Last Name</label
+              >
+              <input type="text" required placeholder="Doe" />
+            </div>
+            <div class="text-left d-flex flex-column w-100 pb-4">
+              <label class="login-signUp-label font-weight-500 pb-1"
+                >Email</label
+              >
+              <input type="email" required placeholder="Mymail@mail.com" />
+            </div>
+            <div class="w-100 pb-4">
+              <a href="./become-host.html">
+                <button
+                  style="padding: 11px 0px"
+                  type="button"
+                  class="yellow-button w-100 font-size-16 font-weight-500"
+                >
+                  Sign Up
+                </button>
+              </a>
+            </div>
+            <div class="d-flex w-100 align-items-center pb-4">
+              <span class="border-bottom-gray w-29"></span>
+              <p class="color-gray-two font-size-16 mx-2 mx-lg-4">
+                Or Sign Up With
+              </p>
+              <span class="border-bottom-gray w-29"></span>
+            </div>
+            <div
+              class="w-100 d-flex justify-content-between align-items-center pb-4"
+            >
+              <button
+                class="form-button-bottom d-flex align-items-center justify-content-center font-weight-500 font-size-16"
+              >
+                <img
+                  style="width: 30px"
+                  class="mr-4"
+                  src="./assets/images/icons/facebookBlue.png"
+                  alt="facebook"
+                />
+                Facebook
+              </button>
+              <button
+                class="form-button-bottom d-flex align-items-center justify-content-center font-weight-500 font-size-16"
+              >
+                <img
+                  style="width: 30px"
+                  class="mr-4"
+                  src="./assets/images/icons/google-icon.png"
+                  alt="facebook"
+                />
+                Google
+              </button>
+            </div>
+            <div class="w-100 pb-4">
+              <div class="border-bottom-gray w-100"></div>
+            </div>
+            <div class="w-100">
+              <button
+                class="form-button-bottom w-100 py-2 d-flex align-items-center justify-content-center font-weight-500 font-size-16 opacity-6"
+                onclick="displayNone(`signup-form`) , displayBlock(`login-form`)"
+              >
+                Already have account? Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section> -->
+
+  <script src="./utils/commonFunctions.js"></script>
+  <script src="./utils/becomeHost.js"></script>
+</body>
+
+</html>

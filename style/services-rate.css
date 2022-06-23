@@ -1,0 +1,119 @@
+.services-padding {
+  padding: 30px 40px;
+}
+.rating {
+  display: flex;
+  transform: rotate(180deg);
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  display: block;
+  transform: rotate(180deg);
+}
+label {
+  display: inline-block;
+  margin-bottom: 0 !important;
+}
+.rating label::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\2605";
+  font-size: 1rem;
+  color: #808080;
+  cursor: pointer;
+}
+.rating label:hover::before,
+.rating label:hover ~ label::before {
+  color: #ffc224;
+}
+input:checked ~ label::before {
+  color: #ffc224;
+}
+.star-margin {
+  margin-right: 70px;
+}
+/* media queries */
+@media (min-width: 320px) {
+  .w-38 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .services-padding {
+    padding: 30px 18px;
+  }
+  .w-30 {
+    width: 100%;
+  }
+  .star-margin {
+    margin: unset;
+  }
+  .rating {
+    display: flex;
+    transform: rotate(180deg);
+    justify-content: end;
+  }
+  .rating label::before {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 540px) {
+  .star-margin {
+    margin-right: 44px;
+  }
+}
+@media (min-width: 768px) {
+  .w-38 {
+    width: 75%;
+  }
+  .star-margin {
+    margin-right: 56px;
+  }
+  .w-30 {
+    width: 30%;
+  }
+}
+@media (min-width: 912px) {
+  .star-margin {
+    margin-right: 40px;
+  }
+  .w-30 {
+    width: 30%;
+  }
+}
+@media (min-width: 820px) {
+  .star-margin {
+    margin-right: 48px;
+  }
+  .services-padding {
+    padding: 30px 40px;
+  }
+}
+@media (min-width: 992px) {
+  .w-38 {
+    width: 52%;
+  }
+  .services-padding {
+    padding: 30px 40px;
+  }
+  .w-30 {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  .star-margin {
+    margin-right: 22px;
+  }
+  .services-padding {
+    padding: 30px 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .star-margin {
+    margin-right: 62px;
+  }
+  .services-padding {
+    padding: 30px 40px;
+  }
+}
